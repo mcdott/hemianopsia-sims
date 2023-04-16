@@ -31,7 +31,7 @@ const Hero: React.FC<HeroProps> = ({ scrollToSliders }) => {
   };
 
   return (
-    <div className='relative w-full h-screen'>
+    <div className='relative w-full h-[calc(100%-4rem)]'>
       <img
         className='absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000'
         src={image1}
@@ -45,7 +45,7 @@ const Hero: React.FC<HeroProps> = ({ scrollToSliders }) => {
         style={{ opacity: isImage2 ? "1" : "0" }}
       />
       <div className='hero-text-container'>
-        <div className='hero-text text-yellow-400 text-9xl font-extrabold text-shadow'>
+        <div className='hero-text text-yellow-400 text-8xl font-extrabold text-shadow'>
           <div>See</div>
           <div>what</div>
           <div>it's</div>
@@ -61,16 +61,17 @@ const Hero: React.FC<HeroProps> = ({ scrollToSliders }) => {
         <div className='differently'>differently</div>
       </div>
       <button
-        className='pause-button absolute top-4 right-4 px-4 py-2 text-white bg-blue-500 hover:bg-blue-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition-colors duration-300'
+        className='pause-button absolute top-4 right-4 px-1 py-1 text-lg bg-white hover:bg-blue-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition-colors duration-300'
         onClick={handlePauseClick}
       >
         {isPaused ? "▶️" : "⏸️"}
       </button>
       <button
-        className='try-the-sims absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-8 px-8 py-4 text-white bg-blue-500 hover:bg-blue-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition-colors duration-300'
+        className='try-the-sims absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-1 px-8 py-1 text-white bg-blue-500 hover:bg-blue-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition-colors duration-300'
         onClick={scrollToSliders}
       >
-        Try the simulations &darr;
+        Try the sims <br />
+        &darr;
       </button>
     </div>
   );

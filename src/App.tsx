@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import "./App.css";
 import Hero from "./components/Hero";
+import Navbar from "./components/Navbar"; // Add this line
 import Sliders from "./components/Sliders";
 
 function App() {
@@ -13,8 +14,11 @@ function App() {
   };
 
   return (
-    <div>
-      <Hero scrollToSliders={scrollToSliders} />
+    <div className='h-screen'>
+      <div className='relative h-screen'>
+        <Navbar scrollToSliders={scrollToSliders} /> {/* Add this line */}
+        <Hero scrollToSliders={scrollToSliders} />
+      </div>
       <div ref={slidersRef}>
         <Sliders />
       </div>
