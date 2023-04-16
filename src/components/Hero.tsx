@@ -1,19 +1,55 @@
 import React from "react";
+import { useState, useEffect } from "react";
+import "./Hero.css"; // Adjust the import path to your CSS file if needed
+import hero1 from "../assets/hero1-full-original-4000px.jpg";
+import hero2 from "../assets/hero2-full-original-4000px.jpg";
 
 const Hero = () => {
+  const image1 = hero1;
+  const image2 = hero2;
+  const [heroImage, setHeroImage] = useState(image1);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setHeroImage((prevHeroImage) =>
+        prevHeroImage === image1 ? image2 : image1
+      );
+    }, 2500);
+    return () => clearInterval(intervalId);
+  }, []);
+
+  const isImage2 = heroImage === image2;
+
   return (
-    <div className='w-full h-screen'>
+    <div className='relative w-full h-screen'>
       <img
-        className='top-0 left-0 w-full h-full object-cover'
-        src='https://images.unsplash.com/photo-1678644444767-0c8f00d8c5ec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEyNnx4SHhZVE1ITGdPY3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=900&q=60'
-        alt='street view'
+        className='absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000'
+        src={image1}
+        alt='hero'
+        style={{ opacity: isImage2 ? "0" : "1" }}
       />
-      <div>
-        <h1 className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-6xl font-bold text-white'>
-          See what it's like to see differently
-        </h1>
+      <img
+        className='absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000'
+        src={image2}
+        alt='hero'
+        style={{ opacity: isImage2 ? "1" : "0" }}
+      />
+      <div className='hero-text-container'>
+        <div className='hero-text text-yellow-400 text-9xl font-extrabold text-shadow'>
+          <div>See</div>
+          <div>what</div>
+          <div>it's</div>
+          <div>like</div>
+          <div>to</div>
+          <div>see</div>
+        </div>
       </div>
-      <p>try the simulations</p>
+      <div
+        className='differently-container text-white transition-opacity duration-1000'
+        style={{ opacity: isImage2 ? "1" : "0" }}
+      >
+        <div className='differently'>differently</div>
+      </div>
     </div>
   );
 };

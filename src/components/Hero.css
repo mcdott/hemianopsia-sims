@@ -1,0 +1,28 @@
+/* In your styles.css or a new CSS file */
+.hero-text-container {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 50%;
+  transform: translateY(-50%);
+  padding-right: 3rem;
+}
+
+.hero-text {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.differently-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+}
+
+.differently {
+  font-style: italic;
+  font-size: 5rem;
+}
