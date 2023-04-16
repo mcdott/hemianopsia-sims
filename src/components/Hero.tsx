@@ -1,24 +1,34 @@
-import React from "react";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./Hero.css"; // Adjust the import path to your CSS file if needed
 import hero1 from "../assets/hero1-full-original-4000px.jpg";
 import hero2 from "../assets/hero2-full-original-4000px.jpg";
 
-const Hero = () => {
+interface HeroProps {
+  scrollToSliders: () => void;
+}
+
+const Hero: React.FC<HeroProps> = ({ scrollToSliders }) => {
   const image1 = hero1;
   const image2 = hero2;
   const [heroImage, setHeroImage] = useState(image1);
+  const [isPaused, setIsPaused] = useState(false);
 
   useEffect(() => {
-    const intervalId = setInterval(() => {
-      setHeroImage((prevHeroImage) =>
-        prevHeroImage === image1 ? image2 : image1
-      );
-    }, 2500);
-    return () => clearInterval(intervalId);
-  }, []);
+    if (!isPaused) {
+      const intervalId = setInterval(() => {
+        setHeroImage((prevHeroImage) =>
+          prevHeroImage === image1 ? image2 : image1
+        );
+      }, 2500);
+      return () => clearInterval(intervalId);
+    }
+  }, [isPaused]);
 
   const isImage2 = heroImage === image2;
+
+  const handlePauseClick = () => {
+    setIsPaused(!isPaused);
+  };
 
   return (
     <div className='relative w-full h-screen'>
@@ -50,6 +60,18 @@ const Hero = () => {
       >
         <div className='differently'>differently</div>
       </div>
+      <button
+        className='pause-button absolute top-4 right-4 px-4 py-2 text-white bg-blue-500 hover:bg-blue-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition-colors duration-300'
+        onClick={handlePauseClick}
+      >
+        {isPaused ? "▶️" : "⏸️"}
+      </button>
+      <button
+        className='try-the-sims absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-8 px-8 py-4 text-white bg-blue-500 hover:bg-blue-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition-colors duration-300'
+        onClick={scrollToSliders}
+      >
+        Try the simulations &darr;
+      </button>
     </div>
   );
 };
