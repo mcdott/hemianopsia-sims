@@ -1,4 +1,7 @@
+// Navbar.tsx
+
 import React from "react";
+import { Link } from "react-router-dom";
 
 interface NavbarProps {
   scrollToSliders: () => void;
@@ -20,12 +23,12 @@ const Navbar: React.FC<NavbarProps> = ({ scrollToSliders }) => {
               </button>
             </li>
             <li>
-              <a
-                href='#'
+              <Link
+                to='/about'
                 className='focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 transition-colors duration-300'
               >
                 About
-              </a>
+              </Link>
             </li>
           </ul>
         </li>
