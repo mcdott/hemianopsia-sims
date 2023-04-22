@@ -1,5 +1,3 @@
-// App.tsx
-
 import React, { useRef } from "react";
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
@@ -8,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Sliders from "./components/Sliders";
 import Footer from "./components/Footer";
 import About from "./components/About";
+import Draw from "./components/Draw";
 
 function App() {
   const slidersRef = useRef<HTMLDivElement>(null);
@@ -37,6 +36,7 @@ function App() {
             }
           />
           <Route path='/about' element={<About />} />
+          <Route path='/draw' element={<Draw />} /> {/* Add this line */}
         </Routes>
         <Footer />
       </div>
