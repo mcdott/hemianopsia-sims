@@ -1,18 +1,17 @@
 /* In your styles.css or a new CSS file */
-.hero-text-container {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 50%;
-  transform: translateY(-50%);
-  padding-right: 3rem;
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  max-width: 640px; /* Adjust this value based on the maximum width you want for the buttons container */
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-.hero-text {
-  text-align: right;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+.differently {
+  font-style: italic;
+  font-size: 5rem;
 }
 
 .differently-container {
@@ -21,8 +20,18 @@
   left: 50%;
   transform: translateY(-50%);
 }
+.hero-text {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
 
-.differently {
-  font-style: italic;
-  font-size: 5rem;
+.hero-text-container {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 50%;
+  transform: translateY(-50%);
+  padding-right: 3rem;
 }

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Hero.css"; // Adjust the import path to your CSS file if needed
+import "./Hero.css";
 import hero1 from "../assets/hero1-full-original-4000px.jpg";
 import hero2 from "../assets/hero2-full-original-4000px.jpg";
 
@@ -35,17 +35,17 @@ const Hero: React.FC<HeroProps> = ({ scrollToSims }) => {
       <img
         className='absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000'
         src={image1}
-        alt='hero'
+        alt='a city street scene'
         style={{ opacity: isImage2 ? "0" : "1" }}
       />
       <img
         className='absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000'
         src={image2}
-        alt='hero'
+        alt='a city street scene with the right half of the image obscured'
         style={{ opacity: isImage2 ? "1" : "0" }}
       />
       <div className='hero-text-container'>
-        <div className='hero-text text-yellow-400 text-8xl font-extrabold text-shadow'>
+        <div className='hero-text text-yellow-400 text-7xl font-extrabold text-shadow'>
           <div>See</div>
           <div>what</div>
           <div>it's</div>
@@ -61,18 +61,30 @@ const Hero: React.FC<HeroProps> = ({ scrollToSims }) => {
         <div className='differently'>differently</div>
       </div>
       <button
+        aria-label='Pause or play the hero image slideshow'
         className='pause-button absolute top-4 right-4 px-1 py-1 text-lg bg-white hover:bg-blue-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition-colors duration-300'
         onClick={handlePauseClick}
       >
         {isPaused ? "▶️" : "⏸️"}
       </button>
-      <button
-        className='try-the-sims absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-1 px-8 py-1 text-white bg-blue-500 hover:bg-blue-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition-colors duration-300'
-        onClick={scrollToSims}
-      >
-        Try the sims <br />
-        &darr;
-      </button>
+      <div className='buttons-container absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-1  space-x-4 md:space-x-16 lg:space-x-30'>
+        <button
+          aria-label='Try the simulations'
+          className='px-8 py-1 text-white bg-blue-500 hover:bg-blue-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition-colors duration-300'
+          onClick={scrollToSims}
+        >
+          Try the simulations &darr;
+        </button>
+        <button
+          aria-label='What is hemianopsia?'
+          className='px-8 py-1 text-white bg-blue-500 hover:bg-blue-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition-colors duration-300'
+          onClick={() => {
+            // onClick event handler logic
+          }}
+        >
+          What is hemianopsia?
+        </button>
+      </div>
     </div>
   );
 };
