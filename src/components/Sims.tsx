@@ -1,5 +1,6 @@
 import React from "react";
 import Sim from "./Sim";
+import DrawButton from "./DrawButton";
 
 const Sims = () => {
   return (
@@ -13,7 +14,7 @@ const Sims = () => {
         description={
           <>
             <p>Draw & Doodle</p>
-            {/* <DrawButton /> */}
+            <DrawButton />
           </>
         }
       />
