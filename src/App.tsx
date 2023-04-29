@@ -7,6 +7,7 @@ import Sims from "./components/Sims";
 import Footer from "./components/Footer";
 import About from "./components/About";
 import Draw from "./components/Draw";
+import HemiInfo from "./components/HemiInfo";
 
 function App() {
   const simsRef = useRef<HTMLDivElement>(null);
@@ -38,6 +39,7 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/draw' element={<Draw />} />
         </Routes>
+        <HemiInfo />
         <Footer />
       </div>
     </Router>
