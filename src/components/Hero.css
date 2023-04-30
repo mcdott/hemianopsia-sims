@@ -1,10 +1,9 @@
-/* In your styles.css or a new CSS file */
 .buttons-container {
   display: flex;
   justify-content: center;
   flex-wrap: nowrap;
   width: 100%;
-  max-width: 640px; /* Adjust this value based on the maximum width you want for the buttons container */
+  max-width: 640px;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -25,6 +24,10 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .hero-text-container {
@@ -33,5 +36,5 @@
   left: 0;
   width: 50%;
   transform: translateY(-50%);
-  padding-right: 3rem;
+  padding-right: 1rem;
 }
