@@ -67,24 +67,13 @@ const Hero: React.FC<HeroProps> = ({ scrollToSims }) => {
       >
         {isPaused ? "▶️" : "⏸️"}
       </button>
-      <div className='buttons-container absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-1  space-x-4 md:space-x-16 lg:space-x-30'>
-        <button
-          aria-label='Try the simulations'
-          className='px-8 py-1 text-white bg-blue-500 hover:bg-blue-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition-colors duration-300'
-          onClick={scrollToSims}
-        >
-          Try the simulations &darr;
-        </button>
-        <button
-          aria-label='What is hemianopsia?'
-          className='px-8 py-1 text-white bg-blue-500 hover:bg-blue-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition-colors duration-300'
-          onClick={() => {
-            // onClick event handler logic
-          }}
-        >
-          What is hemianopsia?
-        </button>
-      </div>
+      <button
+        className='try-the-sims absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-1 px-8 py-1 text-white bg-blue-500 hover:bg-blue-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition-colors duration-300'
+        onClick={scrollToSims}
+      >
+        Try the simulations <br />
+        &darr;
+      </button>
     </div>
   );
 };
