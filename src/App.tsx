@@ -7,25 +7,41 @@ import Sims from "./components/Sims";
 import Footer from "./components/Footer";
 import About from "./components/About";
 // import Draw from "./components/Draw";
-import HemiInfo from "./components/HemiInfo";
+import Hemianopsia from "./components/Hemianopsia";
 
 function App() {
   const simsRef = useRef<HTMLDivElement>(null);
+  const hemianopsiaRef = useRef<HTMLDivElement>(null);
+  const aboutRef = useRef<HTMLDivElement>(null);
 
   const scrollToSims = () => {
     if (simsRef.current) {
       simsRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+  const scrollToHemianopsia = () => {
+    if (hemianopsiaRef.current) {
+      hemianopsiaRef.current.scrollIntoView({ behavior: "smooth" });
+    }
   };
+  const scrollToAbout = () => {
+    if (aboutRef.current) {
+      aboutRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  // const scrollToTop = () => {
+  //   window.scrollTo({ top: 0, behavior: "smooth" });
+  // };
 
   return (
     <Router>
       <div className='flex flex-col min-h-screen'>
-        <Navbar scrollToSims={scrollToSims} />
+        <Navbar
+          scrollToSims={scrollToSims}
+          scrollToHemianopsia={scrollToHemianopsia}
+          scrollToAbout={scrollToAbout}
+        />
         <Routes>
           <Route
             path='/'
@@ -35,13 +51,19 @@ function App() {
                   <Hero scrollToSims={scrollToSims} />
                 </div>
                 <div ref={simsRef}>
-                  <Sims scrollToTop={scrollToTop} />
+                  <Sims />
+                </div>
+                <div ref={hemianopsiaRef}>
+                  <Hemianopsia />
+                </div>
+                <div ref={aboutRef}>
+                  <About />
                 </div>
               </>
             }
           />
-          <Route path='/about' element={<About />} />
-          <Route path='/hemianopsia' element={<HemiInfo />} />
+          {/* <Route path='/about' element={<About />} />
+          <Route path='/hemianopsia' element={<HemiInfo />} /> */}
           {/* <Route path='/draw' element={<Draw />} /> */}
         </Routes>
         <Footer />
@@ -52,6 +74,7 @@ function App() {
 
 export default App;
 
+// separate pages for each section:
 // import React, { useRef } from "react";
 // import { HashRouter as Router, Route, Routes } from "react-router-dom";
 // import "./App.css";

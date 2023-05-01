@@ -1,4 +1,4 @@
-const HemiInfo = () => {
+const Hemianopsia = () => {
   return (
     <div>
       <article>
@@ -14,4 +14,4 @@ const HemiInfo = () => {
   );
 };
 
-export default HemiInfo;
+export default Hemianopsia;
