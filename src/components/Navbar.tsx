@@ -23,7 +23,9 @@ const Navbar: React.FC<NavbarProps> = ({
               <button onClick={scrollToSims}>Simulations</button>
             </li>
             <li>
-              <button onClick={scrollToHemianopsia}>Hemianopsia</button>
+              <button onClick={scrollToHemianopsia}>
+                What is Hemianopsia?
+              </button>
             </li>
             <li>
               <button onClick={scrollToAbout}>About</button>
