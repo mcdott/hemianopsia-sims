@@ -2,11 +2,7 @@ import React from "react";
 import Sim from "./Sim";
 import DrawButton from "./DrawButton";
 
-interface SimsProps {
-  scrollToTop: () => void;
-}
-
-const Sims: React.FC<SimsProps> = ({ scrollToTop }) => {
+const Sims = () => {
   return (
     <div className='container mx-auto px-4 py-12'>
       <Sim
@@ -46,12 +42,6 @@ const Sims: React.FC<SimsProps> = ({ scrollToTop }) => {
           </>
         }
       />
-      <button
-        className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'
-        onClick={scrollToTop}
-      >
-        Back to top
-      </button>
     </div>
   );
 };
