@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 import Sims from "./components/Sims";
 import Footer from "./components/Footer";
 import About from "./components/About";
-import Draw from "./components/Draw";
+// import Draw from "./components/Draw";
 import HemiInfo from "./components/HemiInfo";
 
 function App() {
@@ -16,6 +16,10 @@ function App() {
     if (simsRef.current) {
       simsRef.current.scrollIntoView({ behavior: "smooth" });
     }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
@@ -31,15 +35,15 @@ function App() {
                   <Hero scrollToSims={scrollToSims} />
                 </div>
                 <div ref={simsRef}>
-                  <Sims />
+                  <Sims scrollToTop={scrollToTop} />
                 </div>
               </>
             }
           />
           <Route path='/about' element={<About />} />
-          <Route path='/draw' element={<Draw />} />
+          <Route path='/hemianopsia' element={<HemiInfo />} />
+          {/* <Route path='/draw' element={<Draw />} /> */}
         </Routes>
-        <HemiInfo />
         <Footer />
       </div>
     </Router>
