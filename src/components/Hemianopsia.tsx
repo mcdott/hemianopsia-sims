@@ -67,11 +67,6 @@ const Hemianopsia = () => {
               can occur in either one or both eyes. It is classified as either
               superior (upper) or inferior (lower) quadrantanopsia.
             </li>
-            <li>
-              <strong>Scotoma:</strong> A scotoma is a localized area of vision
-              loss, often described as a blind spot. It can occur in various
-              parts of the visual field and may be present in one or both eyes.
-            </li>
           </ul>
         </article>
 
