@@ -19,29 +19,17 @@ function App() {
       simsRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
-  const scrollToHemianopsia = () => {
-    if (hemianopsiaRef.current) {
-      hemianopsiaRef.current.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+
   const scrollToAbout = () => {
     if (aboutRef.current) {
       aboutRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
 
-  // const scrollToTop = () => {
-  //   window.scrollTo({ top: 0, behavior: "smooth" });
-  // };
-
   return (
     <Router>
       <div className='flex flex-col min-h-screen'>
-        <Navbar
-          scrollToSims={scrollToSims}
-          scrollToHemianopsia={scrollToHemianopsia}
-          scrollToAbout={scrollToAbout}
-        />
+        <Navbar scrollToSims={scrollToSims} scrollToAbout={scrollToAbout} />
         <Routes>
           <Route
             path='/'
@@ -53,17 +41,13 @@ function App() {
                 <div ref={simsRef}>
                   <Sims />
                 </div>
-                <div ref={hemianopsiaRef}>
-                  <Hemianopsia />
-                </div>
                 <div ref={aboutRef}>
                   <About />
                 </div>
               </>
             }
           />
-          {/* <Route path='/about' element={<About />} />
-          <Route path='/hemianopsia' element={<HemiInfo />} /> */}
+          <Route path='/hemianopsia' element={<Hemianopsia />} />
           {/* <Route path='/draw' element={<Draw />} /> */}
         </Routes>
         <Footer />
