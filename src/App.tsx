@@ -11,7 +11,6 @@ import Hemianopsia from "./components/Hemianopsia";
 
 function App() {
   const simsRef = useRef<HTMLDivElement>(null);
-  const hemianopsiaRef = useRef<HTMLDivElement>(null);
   const aboutRef = useRef<HTMLDivElement>(null);
 
   const scrollToSims = () => {

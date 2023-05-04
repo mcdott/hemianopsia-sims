@@ -62,7 +62,7 @@ const Hero: React.FC<HeroProps> = ({ scrollToSims }) => {
       </div>
       <button
         aria-label='Pause or play the hero image slideshow'
-        className='pause-button absolute top-4 right-4 px-1 py-1 text-lg bg-white hover:bg-blue-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition-colors duration-300'
+        className='pause-button absolute bottom-4 right-4 px-1 py-1 text-lg bg-white hover:bg-blue-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition-colors duration-300'
         onClick={handlePauseClick}
       >
         {isPaused ? "▶️" : "⏸️"}
