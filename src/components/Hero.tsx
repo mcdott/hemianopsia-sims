@@ -58,7 +58,12 @@ const Hero: React.FC<HeroProps> = ({ scrollToSims }) => {
         className='differently-container text-white transition-opacity duration-1000'
         style={{ opacity: isImage2 ? "1" : "0" }}
       >
-        <div className='differently'>differently</div>
+        <div className='differently hidden md:block'>differently</div>
+        <div className='differently-vertical md:hidden flex flex-col justify-center items-center text-center absolute top-1/4 right-1/4 bottom-1/4 transform translate-x-1/2 space-y-2 text-5xl pl-20'>
+          {Array.from("differently").map((letter, idx) => (
+            <div key={idx}>{letter}</div>
+          ))}
+        </div>
       </div>
       <button
         aria-label='Pause or play the hero image slideshow'
