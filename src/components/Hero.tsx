@@ -45,17 +45,21 @@ const Hero: React.FC<HeroProps> = ({ scrollToSims }) => {
         style={{ opacity: isImage2 ? "1" : "0" }}
       />
       <div className='hero-text-container'>
-        <div className='hero-text text-yellow-400 text-7xl font-extrabold text-shadow'>
+        <div className='hero-text text-yellow-400 text-4xl md:text-6xl lg:text-7xl font-extrabold text-shadow-dark'>
+          {/* <div className='hero-text text-indigo-800 text-4xl md:text-7xl font-extrabold text-shadow-light'> */}
           <div>See</div>
           <div>what</div>
           <div>it's</div>
           <div>like</div>
           <div>to</div>
           <div>see</div>
+          <div className='italic text-cyan-400 text-shadow-dark'>
+            {isImage2 ? <div>differently</div> : <div>...</div>}
+          </div>
         </div>
       </div>
-      <div
-        className='differently-container text-white transition-opacity duration-1000'
+      {/* <div
+        className='differently-container text-indigo-800 text-shadow-light font-bold transition-opacity duration-1000'
         style={{ opacity: isImage2 ? "1" : "0" }}
       >
         <div className='differently hidden md:block'>differently</div>
@@ -64,10 +68,10 @@ const Hero: React.FC<HeroProps> = ({ scrollToSims }) => {
             <div key={idx}>{letter}</div>
           ))}
         </div>
-      </div>
+      </div> */}
       <button
         aria-label='Pause or play the hero image slideshow'
-        className='pause-button absolute bottom-4 right-4 px-1 py-1 text-lg bg-white hover:bg-blue-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition-colors duration-300'
+        className='pause-button absolute bottom-4 right-4 px-1 py-1 text-lg bg-white hover:bg-blue-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition-colors duration-3000'
         onClick={handlePauseClick}
       >
         {isPaused ? "▶️" : "⏸️"}
