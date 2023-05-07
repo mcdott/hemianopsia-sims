@@ -25,7 +25,6 @@ export default {
     function ({ addUtilities }) {
       const newUtilities = {
         ".text-shadow": {
-          // "text-shadow": "8px 8px 12px rgba(255, 255, 255, 0.6)",
           "text-shadow": "10px 10px 20px rgba(0, 0, 0, 1)",
         },
       };
