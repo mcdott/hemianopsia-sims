@@ -1,10 +1,9 @@
-import React from "react";
 import Sim from "./Sim";
 import DrawButton from "./DrawButton";
 
 const Sims = () => {
   return (
-    <div className='container mx-auto px-4 py-12'>
+    <section className='container mx-auto px-4 py-12 aria-label="Simulations"'>
       <Sim
         position='left'
         simId='slider1'
@@ -42,7 +41,7 @@ const Sims = () => {
           </>
         }
       />
-    </div>
+    </section>
   );
 };
 
