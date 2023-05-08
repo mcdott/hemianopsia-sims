@@ -45,7 +45,7 @@ const Hero: React.FC<HeroProps> = ({ scrollToSims }) => {
         style={{ opacity: isImage2 ? "1" : "0" }}
       />
       <div className='hero-text-container'>
-        <div className='hero-text text-yellow-400 text-4xl md:text-6xl lg:text-7xl font-extrabold text-shadow'>
+        <div className='hero-text text-secondary text-4xl md:text-6xl lg:text-7xl font-extrabold text-shadow'>
           <div>See</div>
           <div>what</div>
           <div>it's</div>
@@ -53,7 +53,7 @@ const Hero: React.FC<HeroProps> = ({ scrollToSims }) => {
           <div>to</div>
           <div>see</div>
           <div
-            className='italic text-cyan-400 text-shadow transition-opacity duration-1000'
+            className='italic text-amber-400 text-shadow transition-opacity duration-1000'
             style={{ opacity: isImage2 ? "1" : "0" }}
           >
             differently
@@ -62,13 +62,13 @@ const Hero: React.FC<HeroProps> = ({ scrollToSims }) => {
       </div>
       <button
         aria-label='Pause or play the hero image slideshow'
-        className='pause-button absolute bottom-4 right-4 px-1 py-1 text-lg bg-white hover:bg-blue-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition-colors duration-3000'
+        className='pause-button absolute bottom-4 right-4 px-1 py-1 text-lg bg-white hover:bg-primaryHover rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition-colors duration-3000'
         onClick={handlePauseClick}
       >
         {isPaused ? "▶️" : "⏸️"}
       </button>
       <button
-        className='try-the-sims absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-1 px-8 py-1 text-white bg-blue-500 hover:bg-blue-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition-colors duration-300'
+        className='try-the-sims absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-1 px-8 py-1 text-white bg-primary hover:bg-primaryHover rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition-colors duration-300'
         onClick={scrollToSims}
       >
         Try the simulations <br />

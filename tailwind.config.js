@@ -4,17 +4,16 @@ export default {
   theme: {
     extend: {
       backgroundColor: {
-        primary: "#3B82F6", // Medium blue
-        secondary: "#14B8A6", // Teal
-        accent: "#FB923C", // Orange
-        background: "#E0F2FE", // Light blue
+        primary: "#3D72FB", // Blue
+        primaryHover: "#0444E8", // Darker Blue for hover effect
+        secondary: "#FBBF24", // Amber
+        tertiary: "#ECF1FF", // Light blue
       },
       textColor: {
-        // primary: "#3B82F6", // Medium blue
-        primary: "#30d03f", // Primary blue
-        secondary: "#14B8A6", // Teal
-        // accent: "#FB923C", // Orange
-        accent: "#d03f30",
+        primary: "#3D72FB", // Blue
+        secondary: "#FBBF24", // Amber
+        accent: "#F87171", // Red
+        tertiary: "#ECF1FF", // Light blue
         "neutral-500": "#6B7280", // Gray 500
         "neutral-700": "#4B5563", // Gray 700
         "neutral-900": "#1F2937", // Gray 900
