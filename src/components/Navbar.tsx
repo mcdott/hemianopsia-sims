@@ -21,7 +21,7 @@ const Navbar: React.FC<NavbarProps> = ({ scrollToSims, scrollToAbout }) => {
   };
 
   return (
-    <nav className='bg-blue-500 p-4 text-white font-semibold relative z-10'>
+    <nav className='bg-primary p-4 text-white font-semibold relative z-10'>
       <ul className='flex items-center justify-between'>
         <li className='text-2xl'>Hemianopsia Sims</li>
         <li>
@@ -70,7 +70,7 @@ const Navbar: React.FC<NavbarProps> = ({ scrollToSims, scrollToAbout }) => {
           <ul
             className={`${
               isMobileMenuOpen ? "block" : "hidden"
-            } absolute bg-blue-500 top-full right-0 md:static md:bg-transparent md:flex items-center space-x-4 transition-all duration-300`}
+            } absolute bg-primary top-full right-0 md:static md:bg-transparent md:flex items-center space-x-4 transition-all duration-300`}
           >
             {isHemianopsiaPage ? (
               <li className='border-b border-white text-left p-1'>
@@ -92,7 +92,7 @@ const Navbar: React.FC<NavbarProps> = ({ scrollToSims, scrollToAbout }) => {
                 </li>
                 <li>
                   <Link to='/hemianopsia' className={`${linkClassName}`}>
-                    What is <br></br> Hemianopsia?
+                    What is Hemianopsia?
                   </Link>
                 </li>
               </>

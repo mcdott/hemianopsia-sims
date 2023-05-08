@@ -13,7 +13,7 @@ const DrawButton: React.FC = () => {
     <div>
       <button
         aria-label='Generate a random drawing idea'
-        className='px-8 py-1 text-white bg-blue-500 hover:bg-blue-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition-colors duration-300'
+        className='px-8 py-1 text-white bg-primary hover:bg-primaryHover rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition-colors duration-300'
         onClick={pickRandomIdea}
       >
         Random drawing idea
