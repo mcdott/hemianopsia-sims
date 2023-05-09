@@ -17,7 +17,7 @@ const About: React.FC = () => {
           Testimonials
         </h2>
         <figure className='bg-tertiary p-6 rounded-lg mx-auto max-w-3xl mb-6'>
-          <blockquote className='text-lg mb-6'>
+          <blockquote className='text-md mb-6'>
             <p className='mb-4'>
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
               nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.
@@ -29,7 +29,7 @@ const About: React.FC = () => {
           </blockquote>
         </figure>
         <figure className='bg-tertiary p-6 rounded-lg mx-auto max-w-3xl mb-6'>
-          <blockquote className='text-lg mb-6'>
+          <blockquote className='text-md mb-6'>
             <p className='mb-4'>
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
               nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.
