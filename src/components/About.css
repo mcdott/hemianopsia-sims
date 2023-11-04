@@ -1,0 +1,53 @@
+@import "../variables.css";
+
+.about-container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--spacing-4);
+  padding-right: var(--spacing-4);
+  padding-top: var(--spacing-12);
+  color: var(--color-neutral-900);
+}
+
+.about-section {
+  text-align: center;
+}
+
+.about-heading {
+  font-size: var(--font-size-xxl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-8);
+}
+
+.about-subheading {
+  text-align: center;
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--spacing-6);
+}
+
+.about-paragraph,
+.about-figure {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(
+    --spacing-wide
+  ); /* Updated to use the new wide spacing variable */
+  margin-bottom: var(--spacing-12);
+}
+
+.about-figure {
+  background-color: var(--color-tertiary);
+  padding: var(--spacing-6);
+  border-radius: var(--border-radius);
+}
+
+.about-blockquote {
+  font-size: var(--font-size-small);
+  margin-bottom: var(--spacing-6);
+}
+
+.about-figcaption {
+  font-weight: var(--font-weight-semibold);
+}
