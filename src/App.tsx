@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import "./index.css";
 import "./App.css";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";

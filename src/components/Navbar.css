@@ -1,12 +1,14 @@
+@import "../variables.css";
+
 /* TODO fix layout */
 /* Navbar container styles */
 .nav-container {
-  background-color: #3d72fb;
-  padding: 1rem;
-  color: white;
-  font-weight: 600;
+  background-color: var(--color-primary);
+  padding: var(--spacing-4);
+  color: var(--color-white);
+  font-weight: var(--font-weight-semibold);
   position: relative;
-  z-index: 10;
+  z-index: var(--zindex-sticky);
 }
 
 /* Navbar list styles */
@@ -17,11 +19,11 @@
 }
 
 .nav-item {
-  font-size: 1.5rem;
+  font-size: var(--font-size-large);
 }
 
 .nav-item + .nav-item {
-  margin-top: 0.25rem;
+  margin-top: var(--spacing-1);
 }
 
 /* TODO make responsive - hide on medium devices and up */
@@ -42,10 +44,10 @@
 .mobile-menu {
   display: none;
   position: absolute;
-  background-color: #3d72fb;
+  background-color: var(--color-primary);
   top: 100%;
   right: 0;
-  transition: all 0.3s;
+  transition: all var(--transition-duration-normal);
 }
 
 .mobile-menu-open {
@@ -69,6 +71,11 @@
   display: block;
   border-bottom: 1px solid white;
 }
+.nav-link {
+  padding: var(--spacing-1);
+  display: block;
+  border-bottom: var(--border-standard);
+}
 
 .md-border-none {
   border-bottom: none;
@@ -81,14 +88,14 @@
 /* Link and Button hover styles */
 .link-hover:focus {
   outline: none;
-  box-shadow: 0 0 0 2px white;
+  box-shadow: 0 0 0 2px var(--color-white);
   opacity: 0.5;
 }
 
 .link-hover:hover {
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
 }
 
 .transition-duration {
-  transition-duration: 0.3s;
+  transition-duration: var(--transition-duration-normal);
 }
