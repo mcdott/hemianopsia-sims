@@ -1,9 +1,10 @@
 import Sim from "./Sim";
+import "./Sims.css";
 import DrawButton from "./DrawButton";
 
 const Sims = () => {
   return (
-    <section className='container mx-auto px-4 py-12 aria-label="Simulations"'>
+    <section className='sims-container' aria-label='Simulations'>
       <Sim
         position='left'
         simId='sim1'

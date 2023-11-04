@@ -1,0 +1,14 @@
+@import "../variables.css";
+
+.sims-container {
+  max-width: 100%;
+  padding-right: var(--spacing-4);
+  padding-left: var(--spacing-4);
+  padding-top: var(--spacing-12);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.sims-description {
+  margin-bottom: var(--spacing-4);
+}
