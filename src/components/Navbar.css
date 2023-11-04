@@ -1,0 +1,94 @@
+/* TODO fix layout */
+/* Navbar container styles */
+.nav-container {
+  background-color: #3d72fb;
+  padding: 1rem;
+  color: white;
+  font-weight: 600;
+  position: relative;
+  z-index: 10;
+}
+
+/* Navbar list styles */
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: between;
+}
+
+.nav-item {
+  font-size: 1.5rem;
+}
+
+.nav-item + .nav-item {
+  margin-top: 0.25rem;
+}
+
+/* TODO make responsive - hide on medium devices and up */
+/* .nav-button {
+  display: none; 
+  outline: none;
+  box-shadow: 0 0 0 2px white;
+  opacity: 0.5;
+}  */
+
+.nav-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* TODO fix responsiveness */
+/* Mobile menu styles */
+.mobile-menu {
+  display: none;
+  position: absolute;
+  background-color: #3d72fb;
+  top: 100%;
+  right: 0;
+  transition: all 0.3s;
+}
+
+.mobile-menu-open {
+  display: block;
+}
+
+.md-static {
+  position: static;
+}
+
+.md-bg-transparent {
+  background-color: transparent;
+}
+
+.md-flex {
+  display: flex;
+}
+
+.nav-link {
+  padding: 0.25rem;
+  display: block;
+  border-bottom: 1px solid white;
+}
+
+.md-border-none {
+  border-bottom: none;
+}
+
+.max-w-xs {
+  max-width: 16rem;
+}
+
+/* Link and Button hover styles */
+.link-hover:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px white;
+  opacity: 0.5;
+}
+
+.link-hover:hover {
+  font-weight: 700;
+}
+
+.transition-duration {
+  transition-duration: 0.3s;
+}
