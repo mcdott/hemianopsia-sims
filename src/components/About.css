@@ -16,14 +16,14 @@
 
 .about-heading {
   font-size: var(--font-size-xxl);
-  font-weight: var(--font-weight-bold);
+  /* font-weight: var(--font-weight-bold); */
   margin-bottom: var(--spacing-8);
 }
 
 .about-subheading {
   text-align: center;
-  font-size: var(--font-size-large);
-  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-xl);
+  /* font-weight: var(--font-weight-semibold); */
   margin-bottom: var(--spacing-6);
 }
 
@@ -31,14 +31,16 @@
 .about-figure {
   margin-left: auto;
   margin-right: auto;
-  max-width: var(
-    --spacing-wide
-  ); /* Updated to use the new wide spacing variable */
+  max-width: var(--spacing-wide);
   margin-bottom: var(--spacing-12);
 }
 
 .about-figure {
-  background-color: var(--color-quaternary);
+  background-image: linear-gradient(
+    to right,
+    var(--color-quaternary),
+    var(--color-quaternary-low-saturation)
+  );
   padding: var(--spacing-6);
   border-radius: var(--border-radius);
 }

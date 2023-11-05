@@ -4,6 +4,7 @@ interface SimProps {
   position: "left" | "right";
   simId: string;
   title: string;
+  titleNonAccented: string;
   iframeSrcMobile: string;
   iframeSrcDesktop: string;
   description: ReactNode;
@@ -13,6 +14,7 @@ const Sim: React.FC<SimProps> = ({
   position,
   simId,
   title,
+  titleNonAccented,
   iframeSrcMobile,
   iframeSrcDesktop,
   description,
@@ -33,6 +35,7 @@ const Sim: React.FC<SimProps> = ({
           width='400'
           height='400'
           title={title}
+          titleNonAccented={titleNonAccented}
         ></iframe>
         <iframe
           className='hidden md:block absolute inset-0 w-full h-full'
@@ -40,11 +43,15 @@ const Sim: React.FC<SimProps> = ({
           width='800'
           height='400'
           title={title}
+          titleNonAccented={titleNonAccented}
         ></iframe>
       </div>
     </div>
     <div className='w-full md:w-1/3'>
-      <h1 className='text-2xl text-primary font-extrabold mb-4'>{title}</h1>
+      <h1 className='text-2xl text-primary font-extrabold mb-4'>
+        {title}{" "}
+        <span className='text-darkGrey font-medium'>{titleNonAccented}</span>{" "}
+      </h1>
       <p className='text-neutral-700'>{description}</p>
     </div>
   </div>

@@ -9,9 +9,9 @@ export default {
         secondary: "#FBBF24", // Amber
       },
       textColor: {
-        primary: "#3772FF", // Blue
+        primary: "#c83e4d", // Cinnamon
         secondary: "#FBBF24", // Amber
-        accent: "#E24E1B", // Cinnamon
+        darkGrey: "#333333", // Dark Grey
         "neutral-500": "#6B7280", // Gray 500
         "neutral-700": "#4B5563", // Gray 700
         "neutral-900": "#1F2937", // Gray 900
