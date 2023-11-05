@@ -4,16 +4,14 @@ export default {
   theme: {
     extend: {
       backgroundColor: {
-        primary: "#3D72FB", // Blue
-        primaryHover: "#0444E8", // Darker Blue for hover effect
+        primary: "#3772FF", // Blue
+        primaryHover: "#2651b8", // Darker Blue for hover effect
         secondary: "#FBBF24", // Amber
-        tertiary: "#ECF1FF", // Light blue
       },
       textColor: {
-        primary: "#3D72FB", // Blue
+        primary: "#3772FF", // Blue
         secondary: "#FBBF24", // Amber
-        accent: "#F87171", // Red
-        tertiary: "#ECF1FF", // Light blue
+        accent: "#E24E1B", // Cinnamon
         "neutral-500": "#6B7280", // Gray 500
         "neutral-700": "#4B5563", // Gray 700
         "neutral-900": "#1F2937", // Gray 900

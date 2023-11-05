@@ -44,7 +44,7 @@ const Sim: React.FC<SimProps> = ({
       </div>
     </div>
     <div className='w-full md:w-1/3'>
-      <h1 className='text-2xl text-neutral-900 font-bold mb-4'>{title}</h1>
+      <h1 className='text-2xl text-primary font-extrabold mb-4'>{title}</h1>
       <p className='text-neutral-700'>{description}</p>
     </div>
   </div>

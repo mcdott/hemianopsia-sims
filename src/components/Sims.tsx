@@ -8,7 +8,7 @@ const Sims = () => {
       <Sim
         position='left'
         simId='sim1'
-        title='Draw & Doodle'
+        title='Draw'
         iframeSrcMobile='https://openprocessing.org/sketch/1921819/embed/?plusEmbedHash=OTY4MzlmNzYxYzk4MTU4MzNhZDIyNDdhYzg1NTBkZjQwOWJiYmJjZmM0NmEyZmY5M2I4MGIyOWZiYzgwYTRmYjA1YjY4MTgyMjkzMjk1NzRlZTEzNzY4ZDVmMjE0NWUxZmQzNjA0Mjk3MTRjZjZlOWE3YWQ3YmJkMGY4MmU5ZTZ0ZTlMUG41VjRrR1lEU3VGd3hFN0Y0K2tYZllsQjkvQ20zWGdTMjJUeDdvZG1VWENLT0gvNU5aaCtNdkVwMlJTVUFWRnlYbFd1cEdOU05DRlBaMTNydz09&plusEmbedFullscreen=true'
         iframeSrcDesktop='https://openprocessing.org/sketch/1921815/embed/?plusEmbedHash=ZDhlODUzN2M1ZThkZjQ5ZmYzYmQxMTA2ZDkyMjdlMDNkMzJkY2FiY2Q0N2Y2YTdhMTY1MWQ3NGI2ODYxOTFjYzI2N2I0MzIwOWE0NzBmNWJjMGQ4ZDliYTExNTI2MzVmZmVkMmEyZGQ5ZWVmNDY2ZTkyZTVkNTQxMjY1NGUxNTdlS2xmZjVuSVZGcjJ4MVBNTTJFZFIxcTNocWVmZE8wYWhhSSt1Q1RJVmIwMVhzRHpzdmhRSDl4ejBFWUNqSGpqQktsRGUwS3hoMEdheU1nYXY0VzlUdz09&plusEmbedFullscreen=true'
         description={

@@ -1,17 +1,15 @@
 :root {
   /* Color */
-  --color-primary: #3d72fb;
-  --color-primary-hover: #0444e8;
+  --color-primary: #f5f0f6;
   --color-secondary: #fbbf24;
-  --color-tertiary: #ecf1ff;
-  --color-accent: #f87171;
-  --color-neutral-500: #6b7280;
-  --color-neutral-700: #4b5563;
-  --color-neutral-900: #1f2937;
-  --color-white: #ffffff;
-  --color-black: #000000;
+  --color-tertiary: #3772ff;
+  --color-tertiary-hover: #2651b8;
+  --color-quaternary: #68b0ab;
+  --color-accent: #c83e4d;
+  --color-black: #080708;
+  --color-text-dark-gray: #333333;
+  --color-text-white: #f5f0f6;
   --color-background: #f3f4f6;
-  --color-surface: #ffffff;
 
   /* Font Size */
   --font-size-large: 1.5rem;
@@ -19,6 +17,13 @@
   --font-size-small: 0.875rem;
   --font-size-xs: 0.75rem;
   --font-size-xxl: 2rem;
+
+  /* Font Weights */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 800;
 
   /* Spacing */
   --spacing-1: 0.25rem;
@@ -42,6 +47,11 @@
 
   /* Border Radius */
   --border-radius: 0.25rem;
+
+  /* Breakpoints for reference */
+  --breakpoint-small: 640px; /* Mobile phones */
+  --breakpoint-medium: 768px; /* Tablets */
+  --breakpoint-large: 1024px; /* Desktops */
 
   /* Z-Index */
   --zindex-default: 1;

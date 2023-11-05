@@ -20,66 +20,70 @@ const Navbar: React.FC<NavbarProps> = ({ scrollToSims, scrollToAbout }) => {
 
   return (
     <nav className='nav-container'>
-      <ul className='nav-list'>
-        <li className='nav-item'>Hemianopsia Sims</li>
-        <li>
-          <button className='nav-button' onClick={toggleMobileMenu}>
-            <svg
-              className='w-6 h-6'
-              fill='none'
-              stroke='currentColor'
-              viewBox='0 0 24 24'
-              xmlns='http://www.w3.org/2000/svg'
-            >
-              <path
-                strokeLinecap='round'
-                strokeLinejoin='round'
-                strokeWidth='2'
-                d='M4 6h16M4 12h16M4 18h16'
-              ></path>
-            </svg>
-          </button>
-          <ul
-            className={`${
-              isMobileMenuOpen ? "mobile-menu-open" : "mobile-menu"
-            } md-static md-bg-transparent md-flex items-center space-x-4 transition-all duration-300`}
+      <div className='nav-content'>
+        <h1 className='nav-title'>
+          Heminanopsia <span className='title-accented'>Sims</span>
+        </h1>
+        <button
+          aria-label='Toggle navigation'
+          className='nav-button'
+          onClick={toggleMobileMenu}
+        >
+          <svg
+            className='w-6 h-6'
+            fill='none'
+            stroke='currentColor'
+            viewBox='0 0 24 24'
+            xmlns='http://www.w3.org/2000/svg'
           >
-            {isHemianopsiaPage ? (
-              <li className='nav-link'>
-                <Link to='/' className='link-hover transition-duration'>
-                  Home
-                </Link>
-              </li>
-            ) : (
-              <>
-                <li className='nav-link md-border-none max-w-xs'>
-                  <button
-                    className='link-hover transition-duration'
-                    onClick={scrollToSims}
-                  >
-                    Simulations
-                  </button>
-                </li>
-                <li className='nav-link md-border-none max-w-xs'>
-                  <button
-                    className='link-hover transition-duration'
-                    onClick={scrollToAbout}
-                  >
-                    About
-                  </button>
-                </li>
-                <li>
-                  <Link
-                    to='/hemianopsia'
-                    className='link-hover transition-duration'
-                  >
-                    What is Hemianopsia?
-                  </Link>
-                </li>
-              </>
-            )}
-          </ul>
-        </li>
+            <path
+              strokeLinecap='round'
+              strokeLinejoin='round'
+              strokeWidth='2'
+              d='M4 6h16M4 12h16M4 18h16'
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <ul
+        className={`${
+          isMobileMenuOpen ? "nav-menu mobile-menu-open" : "nav-menu"
+        }`}
+      >
+        {isHemianopsiaPage ? (
+          <li className='nav-link'>
+            <Link to='/' className='link-hover transition-duration'>
+              Home
+            </Link>
+          </li>
+        ) : (
+          <>
+            <li className='nav-link md-border-none max-w-xs'>
+              <button
+                className='link-hover transition-duration'
+                onClick={scrollToSims}
+              >
+                Simulations
+              </button>
+            </li>
+            <li className='nav-link md-border-none max-w-xs'>
+              <button
+                className='link-hover transition-duration'
+                onClick={scrollToAbout}
+              >
+                About
+              </button>
+            </li>
+            <li>
+              <Link
+                to='/hemianopsia'
+                className='link-hover transition-duration'
+              >
+                What is Hemianopsia?
+              </Link>
+            </li>
+          </>
+        )}
       </ul>
     </nav>
   );

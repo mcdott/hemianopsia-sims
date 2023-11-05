@@ -1,9 +1,9 @@
 @import "../variables.css";
 
 .footer {
-  background-color: var(--color-primary);
+  background-color: var(--color-black);
   padding: var(--spacing-4);
-  color: var(--color-white);
+  color: var(--color-text-white);
   font-weight: var(--font-weight-bold);
   text-align: center;
   margin-top: auto;

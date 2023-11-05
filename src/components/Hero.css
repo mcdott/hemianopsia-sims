@@ -1,10 +1,9 @@
-.buttons-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: nowrap;
-  width: 100%;
-  max-width: 640px;
-  padding-left: 1rem;
+.hero-text-container {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 50%;
+  transform: translateY(-55%);
   padding-right: 1rem;
 }
 
@@ -19,25 +18,26 @@
   padding-bottom: 0.75rem;
 }
 
-/* on tablets */
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  max-width: 640px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 @media screen and (min-width: 768px) {
+  /* Tablets and up */
   .hero-text {
     margin-right: 3rem;
   }
 }
 
-/* on desktops */
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
+  /* Desktops and up */
   .hero-text {
     margin-right: 6rem;
   }
-}
-
-.hero-text-container {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 50%;
-  transform: translateY(-55%);
-  padding-right: 1rem;
 }

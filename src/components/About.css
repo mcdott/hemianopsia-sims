@@ -38,7 +38,7 @@
 }
 
 .about-figure {
-  background-color: var(--color-tertiary);
+  background-color: var(--color-quaternary);
   padding: var(--spacing-6);
   border-radius: var(--border-radius);
 }

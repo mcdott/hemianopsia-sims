@@ -2,6 +2,7 @@
 
 .sims-container {
   max-width: 100%;
+  background-color: var(--color-primary);
   padding-right: var(--spacing-4);
   padding-left: var(--spacing-4);
   padding-top: var(--spacing-12);
