@@ -3,10 +3,11 @@ export default {
   content: ["./src/**/*.{html,tsx}"],
   theme: {
     extend: {
+      // TODO clean up colors
       backgroundColor: {
-        primary: "#3772FF", // Blue
-        primaryHover: "#2651b8", // Darker Blue for hover effect
-        secondary: "#FBBF24", // Amber
+        primary: "ffffff", // White
+        // primaryHover: "#2651b8", // Darker Blue for hover effect
+        secondary: "#f2f2f2", // Light Gray
       },
       textColor: {
         primary: "#ED1C24", // Cinnamon

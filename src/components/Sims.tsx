@@ -60,7 +60,7 @@ const Sims = () => {
             Keep your eyes on the prize — the mouse pointer, that is! Glide it
             under each word and let it lead you to the next line; that's how
             this simulation works. Toggle to see how sentences unfold
-            differently to readers with left and with right hemianopsia.
+            differently with right and with left hemianopsia.
           </p>
         }
       />

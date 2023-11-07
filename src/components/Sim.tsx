@@ -20,8 +20,8 @@ const Sim: React.FC<SimProps> = ({
   description,
 }) => (
   <div
-    className={`flex flex-col md:flex-row items-center justify-center md:space-x-8 mb-8 ${
-      position === "right" ? "md:flex-row-reverse" : ""
+    className={`flex flex-col md:flex-row items-center justify-center pt-8 pb-8 md:space-x-8 md:pt-20 md:pb-20 ${
+      position === "right" ? "md:flex-row-reverse bg-primary" : "bg-secondary"
     }`}
   >
     <div className='w-full md:w-2/3'>
@@ -47,8 +47,8 @@ const Sim: React.FC<SimProps> = ({
         ></iframe>
       </div>
     </div>
-    <div className='w-full md:w-1/3'>
-      <h1 className='text-2xl text-primary font-extrabold mb-4'>
+    <div className='w-full md:w-1/3 pl-8 pr-12'>
+      <h1 className='text-2xl text-primary font-extrabold mb-4 '>
         {title}{" "}
         <span className='text-darkGrey font-medium'>{titleNonAccented}</span>{" "}
       </h1>

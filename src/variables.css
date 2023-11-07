@@ -1,20 +1,20 @@
 :root {
   /* Color */
-  --color-primary: #f5f0f6;
-  --color-secondary: #fbbf24;
+  --color-red: #d70022;
+  --color-yellow: #fbbf24;
   /* --color-tertiary: #3772ff; */
-  --color-tertiary: #ed1c24;
+  --color-blue: #f4f4f4;
   /* sea green #00916E */
   /* Polynesian blue #094D92 */
   --color-tertiary-hover: #2651b8;
-  --color-quaternary: #68b0ab;
+  --color-purple: #9400ff;
+  --color-green: #058b00;
   --color-quaternary-low-saturation: hsl(160, 30%, 70%);
-  /* --color-accent: #c83e4d; */
-  --color-accent: #ed1c24;
-  --color-black: #272727;
-  --color-text-dark-gray: #333333;
-  --color-text-white: #f5f0f6;
-  --color-background: #f3f4f6;
+  --color-black: #1c1c1c;
+  --color-dark-gray: #333333;
+  --color-text-white: #f4f4f4;
+  --color-bg-primary: white;
+  --color-bg-secondary: #f2f2f2;
 
   /* Font Size */
   --font-size-base: 1.2rem;
