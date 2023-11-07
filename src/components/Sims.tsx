@@ -5,6 +5,17 @@ import DrawButton from "./DrawButton";
 const Sims = () => {
   return (
     <section className='sims-container' aria-label='Simulations'>
+      <h1 className='sims-heading'>
+        The <span className='sims-heading-accented'>Simulations</span>
+      </h1>
+      <p className='sims-intro'>
+        Hemianopsia, the loss of half of one's field of vision, often goes
+        unnoticed by those not affected by it, yet it presents distinct
+        challenges to those who live with it every day. These interactive
+        simulations are designed to give you a glimpse into this visual reality.
+        To better understand hemianopsia, see for yourself how a simulation is
+        worth a thousand words.
+      </p>
       <Sim
         position='left'
         simId='sim1'
@@ -15,9 +26,8 @@ const Sims = () => {
         description={
           <>
             <p className='mb-4'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.
-              Nulla quis sem at nibh elementum imperdiet.
+              Unleash your creativity, but with a twist. Experience how memory
+              and perception come into play when drawing with hemianopsia.
             </p>
             <DrawButton />
           </>
@@ -32,9 +42,9 @@ const Sims = () => {
         iframeSrcDesktop='https://openprocessing.org/sketch/XXXX/embed/'
         description={
           <p className='mb-4'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
-            odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
-            quis sem at nibh elementum imperdiet.
+            Enter the arena where your visual field is put to the test.
+            Challenge yourself to adapt and react when part of the screen is
+            unseen, and discover how hemianopsia can change the way you play.
           </p>
         }
       />
@@ -47,9 +57,10 @@ const Sims = () => {
         iframeSrcDesktop='https://openprocessing.org/sketch/1921891/embed/?plusEmbedHash=MGJjNTliY2ZiMTQ1NzBhMmNhMWJlMDc4ZTc1YzVlMDBkNDliNjI2NDYxYmMyMDRmMDljZGRjYzNlMDdjY2YxZDQzNDIxYWQ5NTVjNTEwMDU5YmVjMjI2NTUwZTI0ZDJlNDgyYWRiZWY2YjQ2ZjE5OWVkODE3MWUzZGU0YWIxZTNFRGdVcllNL2FmREE4SUZUUjBEWE90M0haKzdUNnMyU3BzeXJaZVZGNkRiZ0NQWGI3ckthaE8wMWpzb1lxM1FWY0lEY2JQMjVnS2FHb2VLNlI3VFFYQT09&plusEmbedFullscreen=true'
         description={
           <p className='mb-4'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
-            odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
-            quis sem at nibh elementum imperdiet.
+            Keep your eyes on the prize — the mouse pointer, that is! Glide it
+            under each word and let it lead you to the next line; that's how
+            this simulation works. Toggle to see how sentences unfold
+            differently to readers with left and with right hemianopsia.
           </p>
         }
       />

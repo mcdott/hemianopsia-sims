@@ -10,6 +10,26 @@
   margin-left: auto;
 }
 
+.sims-heading {
+  font-size: var(--font-size-xxl);
+  margin-top: var(--spacing-12);
+  margin-bottom: var(--spacing-12);
+  text-align: center;
+}
+
+.sims-heading-accented {
+  color: var(--color-tertiary);
+  font-weight: var(--font-weight-extrabold);
+}
+
+.sims-intro {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--spacing-wide);
+  margin-bottom: var(--spacing-24);
+}
+
 .sims-description {
   margin-bottom: var(--spacing-4);
 }

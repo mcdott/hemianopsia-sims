@@ -4,10 +4,9 @@ import "./Navbar.css";
 
 interface NavbarProps {
   scrollToSims: () => void;
-  scrollToAbout: () => void;
 }
 
-const Navbar: React.FC<NavbarProps> = ({ scrollToSims, scrollToAbout }) => {
+const Navbar: React.FC<NavbarProps> = ({ scrollToSims }) => {
   const location = useLocation();
 
   const isHemianopsiaPage = location.pathname === "/hemianopsia";
@@ -67,12 +66,9 @@ const Navbar: React.FC<NavbarProps> = ({ scrollToSims, scrollToAbout }) => {
               </button>
             </li>
             <li className='nav-link md-border-none max-w-xs'>
-              <button
-                className='link-hover transition-duration'
-                onClick={scrollToAbout}
-              >
+              <Link to='/about' className='link-hover transition-duration'>
                 About
-              </button>
+              </Link>
             </li>
             <li>
               <Link

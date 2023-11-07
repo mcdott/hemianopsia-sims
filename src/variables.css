@@ -3,18 +3,21 @@
   --color-primary: #f5f0f6;
   --color-secondary: #fbbf24;
   /* --color-tertiary: #3772ff; */
-  --color-tertiary: #c83e4d;
+  --color-tertiary: #ed1c24;
+  /* sea green #00916E */
+  /* Polynesian blue #094D92 */
   --color-tertiary-hover: #2651b8;
   --color-quaternary: #68b0ab;
   --color-quaternary-low-saturation: hsl(160, 30%, 70%);
-  --color-accent: #c83e4d;
+  /* --color-accent: #c83e4d; */
+  --color-accent: #ed1c24;
   --color-black: #272727;
   --color-text-dark-gray: #333333;
   --color-text-white: #f5f0f6;
   --color-background: #f3f4f6;
 
   /* Font Size */
-  --font-size-base: 1rem;
+  --font-size-base: 1.2rem;
   --font-size-small: 0.875rem;
   --font-size-xs: 0.75rem;
   --font-size-large: 1.5rem;
@@ -43,6 +46,7 @@
   --spacing-8: 2rem;
   --spacing-10: 2.5rem;
   --spacing-12: 3rem;
+  --spacing-16: 4rem;
   --spacing-24: 6rem;
   --spacing-wide: 60rem;
   --spacing-extra-wide: 80rem;
