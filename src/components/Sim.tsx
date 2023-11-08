@@ -48,7 +48,7 @@ const Sim: React.FC<SimProps> = ({
       </div>
     </div>
     <div className='w-full md:w-1/3 pl-8 pr-12'>
-      <h1 className='text-2xl text-primary font-extrabold mb-4 '>
+      <h1 className='text-3xl text-primary font-extrabold mb-4 '>
         {title}{" "}
         <span className='text-darkGrey font-medium'>{titleNonAccented}</span>{" "}
       </h1>

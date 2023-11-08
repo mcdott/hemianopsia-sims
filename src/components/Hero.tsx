@@ -67,8 +67,7 @@ const Hero: React.FC<HeroProps> = ({ scrollToSims }) => {
         onClick={handlePauseClick}
       ></button>
       <button className='try-the-sims-button' onClick={scrollToSims}>
-        Try the simulations <br />
-        &darr;
+        Try the simulations <br />▼
       </button>
     </div>
   );

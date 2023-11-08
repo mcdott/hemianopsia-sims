@@ -6,15 +6,16 @@ const Sims = () => {
   return (
     <section className='sims-container' aria-label='Simulations'>
       <h1 className='sims-heading'>
-        The <span className='sims-heading-accented'>Simulations</span>
+        To better understand hemianopsia —{" "}
+        <span className='sims-heading-accented'>draw, play, and read!</span>
       </h1>
       <p className='sims-intro'>
-        Hemianopsia, the loss of half of one's field of vision, often goes
+        Hemianopsia - the loss of half of one's field of vision - often goes
         unnoticed by those not affected by it, yet it presents distinct
         challenges to those who live with it every day. These interactive
-        simulations are designed to give you a glimpse into this visual reality.
-        To better understand hemianopsia, see for yourself how a simulation is
-        worth a thousand words.
+        simulations offer a window into the visual experience of hemianopsia.
+        <br />
+        Dive in and see for yourself how a simulation is worth a thousand words.
       </p>
       <Sim
         position='left'
@@ -26,8 +27,8 @@ const Sims = () => {
         description={
           <>
             <p className='mb-4'>
-              Unleash your creativity, but with a twist. Experience how memory
-              and perception come into play when drawing with hemianopsia.
+              Unleash your creativity, but with a twist. See how memory and
+              perception come into play when drawing with hemianopsia.
             </p>
             <DrawButton />
           </>

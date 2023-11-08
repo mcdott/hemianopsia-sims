@@ -75,7 +75,7 @@ const Navbar: React.FC<NavbarProps> = ({ scrollToSims }) => {
                 to='/hemianopsia'
                 className='link-hover transition-duration'
               >
-                What is Hemianopsia?
+                Learn
               </Link>
             </li>
           </>
