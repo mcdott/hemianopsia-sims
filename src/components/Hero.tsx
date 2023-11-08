@@ -13,6 +13,7 @@ const Hero: React.FC<HeroProps> = ({ scrollToSims }) => {
   const [heroImage, setHeroImage] = useState(image1);
   const [isPaused, setIsPaused] = useState(false);
 
+  // TODO fix play/pause button
   useEffect(() => {
     if (!isPaused) {
       const intervalId = setInterval(() => {
@@ -62,11 +63,9 @@ const Hero: React.FC<HeroProps> = ({ scrollToSims }) => {
       </div>
       <button
         aria-label='Pause or play the hero image slideshow'
-        className='pause-button'
+        className='play-pause-button'
         onClick={handlePauseClick}
-      >
-        {isPaused ? "▶️" : "⏸️"}
-      </button>
+      ></button>
       <button className='try-the-sims-button' onClick={scrollToSims}>
         Try the simulations <br />
         &darr;

@@ -47,20 +47,6 @@
   padding-right: 1rem;
 }
 
-@media screen and (min-width: 768px) {
-  /* Tablets and up */
-  .hero-text {
-    margin-right: 3rem;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  /* Desktops and up */
-  .hero-text {
-    margin-right: 6rem;
-  }
-}
-
 @keyframes animate {
   0% {
     background-position: 0%;
@@ -112,10 +98,38 @@
   z-index: -1;
 }
 
-/* Positioning the pause button */
-.pause-button {
+/* Positioning the play/pause button */
+.play-pause-button {
   position: absolute;
-  bottom: 2rem;
-  right: 4rem;
-  left: auto;
+  bottom: 1.5rem;
+  right: 2rem;
+  width: 40px;
+  height: 40px;
+  background-image: url("../assets/play-pause-icon.svg");
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--color-yellow);
+  border: var(--color-black) 2.5px solid;
+  padding: var(--spacing-4);
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  /* Tablets and up */
+  .hero-text {
+    margin-right: 3rem;
+  }
+
+  .play-pause-button {
+    bottom: 1.5rem;
+    right: 4rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* Desktops and up */
+  .hero-text {
+    margin-right: 6rem;
+  }
 }
