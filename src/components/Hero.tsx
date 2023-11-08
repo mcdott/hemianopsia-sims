@@ -31,15 +31,15 @@ const Hero: React.FC<HeroProps> = ({ scrollToSims }) => {
   };
 
   return (
-    <div className='relative w-full h-[calc(100%-4rem)]'>
+    <div className='hero-container'>
       <img
-        className='absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000'
+        className='hero-image'
         src={image1}
         alt='a city street scene'
         style={{ opacity: isImage2 ? "0" : "1" }}
       />
       <img
-        className='absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000'
+        className='hero-image'
         src={image2}
         alt='a city street scene with the right half of the image obscured'
         style={{ opacity: isImage2 ? "1" : "0" }}
@@ -62,15 +62,12 @@ const Hero: React.FC<HeroProps> = ({ scrollToSims }) => {
       </div>
       <button
         aria-label='Pause or play the hero image slideshow'
-        className='pause-button absolute bottom-4 right-4 px-1 py-1 text-lg bg-white hover:bg-primaryHover rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition-colors duration-3000'
+        className='pause-button'
         onClick={handlePauseClick}
       >
         {isPaused ? "▶️" : "⏸️"}
       </button>
-      <button
-        className='try-the-sims absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-1 px-8 py-1 text-white bg-primary hover:bg-primaryHover rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition-colors duration-300'
-        onClick={scrollToSims}
-      >
+      <button className='try-the-sims-button' onClick={scrollToSims}>
         Try the simulations <br />
         &darr;
       </button>
