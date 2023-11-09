@@ -20,6 +20,7 @@
 .sims-heading-accented {
   color: var(--color-red);
   font-weight: var(--font-weight-extrabold);
+  font-style: italic;
 }
 
 .sims-intro {

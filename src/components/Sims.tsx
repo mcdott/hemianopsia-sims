@@ -7,7 +7,7 @@ const Sims = () => {
     <section className='sims-container' aria-label='Simulations'>
       <h1 className='sims-heading'>
         To better understand hemianopsia —{" "}
-        <span className='sims-heading-accented'>draw, play, and read!</span>
+        <span className='sims-heading-accented'>draw, play, read</span>
       </h1>
       <p className='sims-intro'>
         Hemianopsia - the loss of half of one's field of vision - often goes
