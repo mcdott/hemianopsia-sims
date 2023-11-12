@@ -16,14 +16,12 @@
 
 .about-heading {
   font-size: var(--font-size-xxl);
-  /* font-weight: var(--font-weight-bold); */
   margin-bottom: var(--spacing-8);
 }
 
 .about-subheading {
   text-align: center;
   font-size: var(--font-size-xl);
-  /* font-weight: var(--font-weight-semibold); */
   margin-bottom: var(--spacing-6);
 }
 

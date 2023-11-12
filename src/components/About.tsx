@@ -7,38 +7,23 @@ const About: React.FC = () => {
       <section className='about-section'>
         <h1 className='about-heading'>About</h1>
         <p className='about-paragraph'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
-          odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
-          quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent
-          mauris.
+          Hemianopsia Sims grew out of a unique challenge in my teaching career:
+          helping Eva, a fourth-grade student with hemianopsia, convey to her
+          classmates how she perceived the world. When words proved
+          insufficient, I crafted a few interactive activities to give Eva's
+          peers a glimpse into her visual experience.
         </p>
-      </section>
-      <section>
-        <h2 className='about-subheading'>Testimonials</h2>
-        <figure className='about-figure'>
-          <blockquote className='about-blockquote'>
-            <p className='mb-4'>
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.
-              Nulla quis sem at nibh elementum imperdiet."
-            </p>
-            <figcaption className='about-figcaption'>
-              &mdash; Pia Chowdhury, daughter of a person with hemianopsia
-            </figcaption>
-          </blockquote>
-        </figure>
-        <figure className='about-figure'>
-          <blockquote className='about-blockquote'>
-            <p className='mb-4'>
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.
-              Nulla quis sem at nibh elementum imperdiet."
-            </p>
-            <figcaption className='about-figcaption'>
-              &mdash; Sylvain, friend of a person with hemianopsia
-            </figcaption>
-          </blockquote>
-        </figure>
+        <p className='about-paragraph'>
+          The response to these simple simulations was unexpectedly profound —
+          Eva's classmates embraced their new understanding of hemianopsia,
+          applying it in thoughtful ways to make her school day easier.
+        </p>
+        <p className='about-paragraph'>
+          The mission of this website is to extend the impact of these tools
+          beyond a single classroom by sharing them with the world. If you see
+          their value, please join in by spreading the word! Together, we can
+          increase understanding of hemianopsia, one simulation at a time.
+        </p>
       </section>
     </main>
   );
