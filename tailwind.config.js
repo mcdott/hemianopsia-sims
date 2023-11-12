@@ -3,17 +3,17 @@ export default {
   content: ["./src/**/*.{html,tsx}"],
   theme: {
     extend: {
+      // TODO clean up colors
       backgroundColor: {
-        primary: "#3D72FB", // Blue
-        primaryHover: "#0444E8", // Darker Blue for hover effect
-        secondary: "#FBBF24", // Amber
-        tertiary: "#ECF1FF", // Light blue
+        primary: "ffffff", // White
+        // primaryHover: "#2651b8", // Darker Blue for hover effect
+        secondary: "#f2f2f2", // Light Gray
       },
       textColor: {
-        primary: "#3D72FB", // Blue
+        primary: "#ED1C24", // Cinnamon
+        // primary: "#c83e4d", // Cinnamon
         secondary: "#FBBF24", // Amber
-        accent: "#F87171", // Red
-        tertiary: "#ECF1FF", // Light blue
+        darkGrey: "#333333", // Dark Grey
         "neutral-500": "#6B7280", // Gray 500
         "neutral-700": "#4B5563", // Gray 700
         "neutral-900": "#1F2937", // Gray 900

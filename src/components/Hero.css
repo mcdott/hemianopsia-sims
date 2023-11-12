@@ -1,10 +1,28 @@
-.buttons-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: nowrap;
+.hero-container {
+  position: relative;
   width: 100%;
-  max-width: 640px;
-  padding-left: 1rem;
+  height: calc(100vh - 4rem);
+  overflow: hidden;
+  /* padding-top: 2rem; */
+  box-sizing: border-box;
+}
+
+/* Positioning the hero image */
+.hero-image {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 4rem - 5rem);
+  object-fit: cover;
+  transition: opacity 1s ease-in-out;
+}
+
+.hero-text-container {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 50%;
+  transform: translateY(-55%);
   padding-right: 1rem;
 }
 
@@ -19,25 +37,93 @@
   padding-bottom: 0.75rem;
 }
 
-/* on tablets */
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  max-width: 640px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+.try-the-sims-button {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--color-text-white);
+  border: none;
+  padding: var(--spacing-2) var(--spacing-4);
+  background: linear-gradient(90deg, #0884ff, #9400ff, #058b00);
+  background-size: 200%;
+  border-radius: 30px;
+  transition: background-color var(--transition-duration-normal);
+  overflow: hidden;
+  z-index: 10;
+}
+
+.try-the-sims-button:hover {
+  animation: animate 8s linear infinite;
+}
+
+/* TODO fix blur radius */
+.try-the-sims-button:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: linear-gradient(45deg, #0884ff, #9400ff, #058b00);
+  background-size: 400%;
+  border-radius: 35px; /* Slightly larger than the button itself to be visible */
+  opacity: 0;
+  transition: opacity 0.5s, filter 0.5s;
+  z-index: -1;
+}
+
+/* Positioning the play/pause button */
+.play-pause-button {
+  position: absolute;
+  bottom: 1.25rem;
+  right: 2rem;
+  width: 45px;
+  height: 45px;
+  background-image: url("../assets/play-pause-icon.svg");
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--color-yellow);
+  /* border: var(--color-black) 2.5px solid; */
+  padding: var(--spacing-4);
+  border-radius: 50%;
+}
+
 @media screen and (min-width: 768px) {
+  /* Tablets and up */
   .hero-text {
     margin-right: 3rem;
   }
-}
 
-/* on desktops */
-@media screen and (min-width: 1025px) {
-  .hero-text {
-    margin-right: 6rem;
+  .play-pause-button {
+    bottom: 1rem;
+    right: 3rem;
   }
 }
 
-.hero-text-container {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 50%;
-  transform: translateY(-55%);
-  padding-right: 1rem;
+@media screen and (min-width: 1024px) {
+  /* Desktops and up */
+  .hero-text {
+    margin-right: 6rem;
+  }
 }

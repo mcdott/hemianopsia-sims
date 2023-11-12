@@ -1,0 +1,121 @@
+@import "../variables.css";
+
+.nav-container {
+  background-color: var(--color-bg-primary);
+  padding: var(--spacing-4);
+  font-weight: var(--font-weight-semibold);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: var(--zindex-sticky);
+}
+
+.nav-title {
+  font-size: var(--font-size-xxl);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-large);
+  margin: 0;
+}
+
+.title-accented {
+  color: var(--color-red);
+  font-weight: var(--font-weight-extrabold);
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+}
+
+/* Navbar hamburger button for mobile view */
+.nav-button {
+  display: block; /* Visible on mobile */
+  background: none;
+  border: none;
+  padding: var(--spacing-2);
+  cursor: pointer;
+}
+
+/* Hamburger icon size */
+.nav-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column; /* Stack vertically on mobile */
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100%; /* Full width on mobile */
+  transition: all var(--transition-duration-normal);
+  transform: translateY(-100%);
+  background-color: var(--color-bg-primary);
+  visibility: hidden;
+}
+
+/* Show menu for 'mobile-menu-open' class */
+.mobile-menu-open {
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.nav-link {
+  padding: var(--spacing-2);
+  display: block;
+  text-align: center;
+  border-bottom: var(--border-standard);
+}
+
+.nav-link:last-child {
+  border-bottom: none;
+}
+
+.link-hover:hover,
+.link-hover:focus {
+  box-shadow: 0 0 0 2px var(--color-dark-grey);
+  opacity: 0.75;
+}
+
+.transition-duration {
+  transition: all var(--transition-duration-normal);
+}
+
+@media (min-width: 768px) {
+  /* Tablets and up */
+  .nav-menu {
+    flex-direction: row;
+    position: static;
+    width: auto;
+    transform: translateY(0);
+    visibility: visible;
+  }
+
+  .nav-link {
+    padding: 0 var(--spacing-2);
+    border-bottom: none;
+  }
+
+  .nav-button {
+    display: none; /* Hide hamburger menu on tablet and desktop */
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Desktops and up */
+  .nav-container {
+    justify-content: space-between;
+  }
+
+  .nav-menu {
+    justify-content: flex-end;
+  }
+  /* TODO same for all */
+  .nav-link:hover,
+  .nav-link:focus {
+    text-decoration: underline;
+  }
+}

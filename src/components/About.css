@@ -1,0 +1,58 @@
+@import "../variables.css";
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-width: 100%;
+  /* margin-left: auto;
+  margin-right: auto; */
+  padding: var(--spacing-4);
+  background-image: linear-gradient(
+    to right,
+    var(--color-quaternary),
+    var(--color-quaternary-low-saturation)
+  );
+}
+
+.about-section {
+  text-align: center;
+}
+
+.about-heading {
+  font-size: var(--font-size-xxl);
+  margin-bottom: var(--spacing-8);
+}
+
+.about-subheading {
+  text-align: center;
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-6);
+}
+
+.about-paragraph,
+.about-figure {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--spacing-wide);
+  margin-bottom: var(--spacing-12);
+}
+
+.about-container {
+  background-image: linear-gradient(
+    to right,
+    var(--color-quaternary),
+    var(--color-quaternary-low-saturation)
+  );
+  /* padding: var(--spacing-6); */
+}
+
+.about-blockquote {
+  font-size: var(--font-size-small);
+  margin-bottom: var(--spacing-6);
+}
+
+.about-figcaption {
+  font-weight: var(--font-weight-semibold);
+}

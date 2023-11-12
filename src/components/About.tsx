@@ -1,45 +1,29 @@
 import React from "react";
+import "./About.css";
 
 const About: React.FC = () => {
   return (
-    <main className='container mx-auto px-4 py-12 text-neutral-900'>
-      <section className='text-center'>
-        <h1 className='text-3xl lg:text-4xl font-bold mb-8'>About</h1>
-        <p className='text-lg mx-auto max-w-3xl mb-12'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
-          odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
-          quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent
-          mauris.
+    <main className='about-container'>
+      <section className='about-section'>
+        <h1 className='about-heading'>About</h1>
+        <p className='about-paragraph'>
+          Hemianopsia Sims grew out of a unique challenge in my teaching career:
+          helping Eva, a fourth-grade student with hemianopsia, convey to her
+          classmates how she perceived the world. When words proved
+          insufficient, I crafted a few interactive activities to give Eva's
+          peers a glimpse into her visual experience.
         </p>
-      </section>
-      <section>
-        <h2 className='text-center text-2xl font-semibold mb-6'>
-          Testimonials
-        </h2>
-        <figure className='bg-tertiary p-6 rounded-lg mx-auto max-w-3xl mb-6'>
-          <blockquote className='text-md mb-6'>
-            <p className='mb-4'>
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.
-              Nulla quis sem at nibh elementum imperdiet."
-            </p>
-            <figcaption className='font-semibold'>
-              &mdash; Pia Chowdhury, daughter of a person with hemianopsia
-            </figcaption>
-          </blockquote>
-        </figure>
-        <figure className='bg-tertiary p-6 rounded-lg mx-auto max-w-3xl mb-6'>
-          <blockquote className='text-md mb-6'>
-            <p className='mb-4'>
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.
-              Nulla quis sem at nibh elementum imperdiet."
-            </p>
-            <figcaption className='font-semibold'>
-              &mdash; Sylvain, friend of a person with hemianopsia
-            </figcaption>
-          </blockquote>
-        </figure>
+        <p className='about-paragraph'>
+          The response to these simple simulations was unexpectedly profound —
+          Eva's classmates embraced their new understanding of hemianopsia,
+          applying it in thoughtful ways to make her school day easier.
+        </p>
+        <p className='about-paragraph'>
+          The mission of this website is to extend the impact of these tools
+          beyond a single classroom by sharing them with the world. If you see
+          their value, please join in by spreading the word! Together, we can
+          increase understanding of hemianopsia, one simulation at a time.
+        </p>
       </section>
     </main>
   );
