@@ -1,6 +1,6 @@
-import "./Hemianopsia.css";
+import "./Learn.css";
 
-const Hemianopsia = () => {
+const Learn = () => {
   return (
     <div className='container'>
       <div className='grid-container'>
@@ -99,4 +99,4 @@ const Hemianopsia = () => {
   );
 };
 
-export default Hemianopsia;
+export default Learn;

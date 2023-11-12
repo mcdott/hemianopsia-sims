@@ -34,14 +34,15 @@
   }
 }
 
-/* TODO styles for article */
-/* .main-content {
-} */
+.main-content {
+}
 
 .main-heading {
   font-size: var(--font-size-xxl);
   /* font-weight: var(--font-weight-bold); */
-  margin-bottom: var(--spacing-6);
+  margin-top: var(--spacing-6);
+  margin-bottom: var(--spacing-8);
+  text-align: center;
 }
 
 .main-paragraph {
@@ -52,8 +53,8 @@
 .sub-heading {
   font-size: var(--font-size-xxl);
   /* font-weight: var(--font-weight-semibold); */
-  margin-top: var(--spacing-6);
-  margin-bottom: var(--spacing-4);
+  margin-top: var(--spacing-10);
+  margin-bottom: var(--spacing-8);
 }
 
 .main-list {
@@ -69,12 +70,17 @@
 
 .sidebar {
   background-image: linear-gradient(
-    to right,
+    to left,
     var(--color-quaternary),
     var(--color-quaternary-low-saturation)
   );
   padding: var(--spacing-6);
   border-radius: var(--border-radius);
+}
+
+.sidebar li {
+  font-size: var(--font-size-small);
+  margin-bottom: var(--spacing-4);
 }
 
 .sidebar-heading {

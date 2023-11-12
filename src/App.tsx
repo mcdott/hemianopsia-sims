@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar";
 import Sims from "./components/Sims";
 import Footer from "./components/Footer";
 import About from "./components/About";
-import Hemianopsia from "./components/Hemianopsia";
+import Learn from "./components/Learn";
 import Testimonials from "./components/Testimonials";
 
 function App() {
@@ -42,7 +42,7 @@ function App() {
             }
           />
           <Route path='/about' element={<About />} />
-          <Route path='/hemianopsia' element={<Hemianopsia />} />
+          <Route path='/learn' element={<Learn />} />
         </Routes>
         <Footer />
       </div>
