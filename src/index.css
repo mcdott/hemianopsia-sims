@@ -9,7 +9,7 @@
 /* Other global styles */
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif; /* Primary font */
+  font-family: var(--font-family-sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--color-bg-primary);
@@ -24,6 +24,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Merriweather", serif; /* Secondary font for headings */
+  font-family: var(--font-family-serif);
   font-weight: var(font-weight-medium);
 }

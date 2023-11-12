@@ -1,24 +1,59 @@
 @import "../variables.css";
 
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
 .draw-button {
+  position: relative;
   padding-left: var(--spacing-8);
   padding-right: var(--spacing-8);
-  padding-top: var(--spacing-1);
-  padding-bottom: var(--spacing-1);
-  color: var(--color-white);
-  background-color: var(--color-primary);
-  border-radius: var(--border-radius);
+  padding-top: var(--spacing-4);
+  padding-bottom: var(--spacing-4);
+  color: #fff;
+  border: none;
+  background: linear-gradient(
+    90deg,
+    #0884ff,
+    #9400ff,
+    #fbbf24,
+    #058b00,
+    #0884ff
+  );
+  background-size: 400%;
+  border-radius: 30px;
   transition: background-color var(--transition-duration-normal);
+  overflow: hidden;
+  z-index: 1;
 }
 
 .draw-button:hover {
-  background-color: var(--color-primary-hover);
+  animation: animate 8s linear infinite;
 }
 
-/* TODO add on-click styles */
-.focus-visible {
-  outline: none;
-  box-shadow: 0 0 0 2px var(--color-blue-500),
-    0 0 0 4px var(--color-blue-500-opacity-50);
-  /* TODO Adjust box-shadow to use variable */
+.draw-button:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: linear-gradient(45deg, #0884ff, #9400ff, #058b00);
+  background-size: 400%;
+  border-radius: 35px; /* Slightly larger than the button itself to be visible */
+  opacity: 0;
+  transition: opacity 0.5s, filter 0.5s;
+  z-index: -1;
+}
+
+/* TODO fix - blur not working */
+.draw-button:hover:before {
+  filter: blur(20px);
+  opacity: 1;
+  animation: animate 8s linear infinite;
 }

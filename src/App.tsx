@@ -8,6 +8,7 @@ import Sims from "./components/Sims";
 import Footer from "./components/Footer";
 import About from "./components/About";
 import Hemianopsia from "./components/Hemianopsia";
+import Testimonials from "./components/Testimonials";
 
 function App() {
   const simsRef = useRef<HTMLDivElement>(null);
@@ -33,6 +34,9 @@ function App() {
                 </div>
                 <div ref={simsRef}>
                   <Sims />
+                </div>
+                <div>
+                  <Testimonials />
                 </div>
               </>
             }

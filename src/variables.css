@@ -1,32 +1,39 @@
 :root {
   /* Color */
-  --color-red: #d70022;
+  --color-red: #ed1c24;
+  /* --color-red: #d70022; */
   --color-yellow: #fbbf24;
   /* --color-tertiary: #3772ff; */
-  --color-blue: #f4f4f4;
+  --color-blue: #0884ff;
   /* sea green #00916E */
   /* Polynesian blue #094D92 */
-  --color-tertiary-hover: #2651b8;
+  /* --color-tertiary-hover: #2651b8; */
   --color-purple: #9400ff;
   --color-green: #058b00;
   --color-quaternary-low-saturation: hsl(160, 30%, 70%);
   --color-black: #1c1c1c;
-  --color-dark-gray: #333333;
+  --color-dark-grey: #333333;
   --color-text-white: #f4f4f4;
   --color-bg-primary: white;
   --color-bg-secondary: #f2f2f2;
 
+  /* Font Family */
+  --font-family-sans-serif: din-2014, sans-serif;
+  --font-family-serif: "Noe Display", serif;
+
   /* Font Size */
   --font-size-base: 1.2rem;
-  --font-size-small: 0.875rem;
+  --font-size-small: 1rem;
   --font-size-xs: 0.75rem;
-  --font-size-large: 1.5rem;
-  --font-size-xl: 1.75rem;
+  --font-size-large: 1.375rem;
+  --font-size-xl: 1.5rem;
   --font-size-xxl: 2rem;
 
   /* Line Height */
   --line-height-base: 1.5rem;
   --line-height-large: 2rem;
+  --line-height-xl: 2.5rem;
+  --line-height-xxl: 3.5rem;
 
   /* Font Weights */
   --font-weight-light: 300;
@@ -38,6 +45,7 @@
 
   /* Spacing */
   --spacing-1: 0.25rem;
+  --spacing-1-5: 0.375rem;
   --spacing-2: 0.5rem;
   --spacing-3: 0.75rem;
   --spacing-4: 1rem;
@@ -46,8 +54,10 @@
   --spacing-8: 2rem;
   --spacing-10: 2.5rem;
   --spacing-12: 3rem;
+  --spacing-14: 3.5rem;
   --spacing-16: 4rem;
   --spacing-24: 6rem;
+  --spacing-medium: 20rem;
   --spacing-wide: 60rem;
   --spacing-extra-wide: 80rem;
 
