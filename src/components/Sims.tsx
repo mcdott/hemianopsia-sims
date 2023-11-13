@@ -30,7 +30,7 @@ const Sims = () => {
               Unleash your creativity, but with a twist. See how memory and
               perception come into play when drawing with hemianopsia.
             </p>
-            <DrawButton />
+            {/* <DrawButton /> */}
           </>
         }
       />
@@ -46,6 +46,9 @@ const Sims = () => {
             Enter the arena where your visual field is put to the test.
             Challenge yourself to adapt and react when part of the screen is
             unseen, and discover how hemianopsia can change the way you play.
+            <br />
+            <br />
+            (Coming soon!)
           </p>
         }
       />

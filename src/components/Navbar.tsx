@@ -9,7 +9,7 @@ interface NavbarProps {
 const Navbar: React.FC<NavbarProps> = ({ scrollToSims }) => {
   const location = useLocation();
 
-  const isLearnPage = location.pathname === "/learn";
+  const isHomePage = location.pathname === "/";
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -49,7 +49,7 @@ const Navbar: React.FC<NavbarProps> = ({ scrollToSims }) => {
           isMobileMenuOpen ? "nav-menu mobile-menu-open" : "nav-menu"
         }`}
       >
-        {isLearnPage ? (
+        {!isHomePage ? (
           <li className='nav-link'>
             <Link to='/' className='link-hover transition-duration'>
               Home
@@ -70,11 +70,11 @@ const Navbar: React.FC<NavbarProps> = ({ scrollToSims }) => {
                 About
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link to='/learn' className='link-hover transition-duration'>
                 Learn
               </Link>
-            </li>
+            </li> */}
           </>
         )}
       </ul>

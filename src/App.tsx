@@ -7,12 +7,11 @@ import Navbar from "./components/Navbar";
 import Sims from "./components/Sims";
 import Footer from "./components/Footer";
 import About from "./components/About";
-import Learn from "./components/Learn";
+// import Learn from "./components/Learn";
 import Testimonials from "./components/Testimonials";
 
 function App() {
   const simsRef = useRef<HTMLDivElement>(null);
-  const aboutRef = useRef<HTMLDivElement>(null);
 
   const scrollToSims = () => {
     if (simsRef.current) {
@@ -35,14 +34,14 @@ function App() {
                 <div ref={simsRef}>
                   <Sims />
                 </div>
-                <div>
+                {/* <div>
                   <Testimonials />
-                </div>
+                </div> */}
               </>
             }
           />
           <Route path='/about' element={<About />} />
-          <Route path='/learn' element={<Learn />} />
+          {/* <Route path='/learn' element={<Learn />} /> */}
         </Routes>
         <Footer />
       </div>
