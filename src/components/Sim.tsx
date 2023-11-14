@@ -35,7 +35,6 @@ const Sim: React.FC<SimProps> = ({
           width='400'
           height='400'
           title={title}
-          titleNonAccented={titleNonAccented}
         ></iframe>
         <iframe
           className='hidden md:block absolute inset-0 w-full h-full'
@@ -43,14 +42,13 @@ const Sim: React.FC<SimProps> = ({
           width='800'
           height='400'
           title={title}
-          titleNonAccented={titleNonAccented}
         ></iframe>
       </div>
     </div>
     <div className='w-full md:w-1/3 pl-8 pr-12'>
       <h1 className='text-3xl text-primary font-extrabold mb-4 '>
         {title}{" "}
-        <span className='text-darkGrey font-medium'>{titleNonAccented}</span>{" "}
+        <span className='text-darkGrey font-medium'>{titleNonAccented}</span>
       </h1>
       <p className='text-neutral-700'>{description}</p>
     </div>
