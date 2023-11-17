@@ -38,6 +38,17 @@ const Read = () => {
           className={`toggle-button ${overlayOnLeft ? "" : "active"}`}
         />
       </div>
+      <div className='toggle-button-cover'>
+        <div className='button-cover'>
+          <div className='button b2' id='button-13'>
+            <input type='checkbox' className='checkbox' />
+            <div className='knobs'>
+              <span></span>
+            </div>
+            <div className='layer'></div>
+          </div>
+        </div>
+      </div>
       <p>
         Keep your eyes on the prize — the mouse pointer, that is! Glide it under
         each word and let it lead you to the next line; that's how this

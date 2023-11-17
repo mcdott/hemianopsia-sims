@@ -104,9 +104,14 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--color-yellow);
-  /* border: var(--color-black) 2.5px solid; */
   padding: var(--spacing-4);
   border-radius: 50%;
+}
+
+.play-pause-button-clicked {
+  transform: scale(0.95);
+  background-color: #ffcc00;
+  transition: transform 0.1s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 @media screen and (min-width: 768px) {

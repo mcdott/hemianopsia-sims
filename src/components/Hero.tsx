@@ -63,7 +63,9 @@ const Hero: React.FC<HeroProps> = ({ scrollToSims }) => {
       </div>
       <button
         aria-label='Pause or play the hero image slideshow'
-        className='play-pause-button'
+        className={`play-pause-button ${
+          isPaused ? "play-pause-button-clicked" : ""
+        }`}
         onClick={handlePauseClick}
       ></button>
       <button className='try-the-sims-button' onClick={scrollToSims}>

@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import "./index.css";
 import "./App.css";
 import Hero from "./components/Hero";
@@ -13,6 +13,7 @@ import About from "./components/About";
 import Testimonials from "./components/Testimonials";
 
 function App() {
+  const location = useLocation();
   const simsRef = useRef<HTMLDivElement>(null);
 
   const scrollToSims = () => {
@@ -22,36 +23,34 @@ function App() {
   };
 
   return (
-    <Router>
-      <div className='flex flex-col min-h-screen'>
-        <Navbar scrollToSims={scrollToSims} />
-        <Routes>
-          <Route
-            path='/'
-            element={
-              <>
-                <div className='relative h-screen'>
-                  <Hero scrollToSims={scrollToSims} />
-                </div>
-                <div ref={simsRef}>
-                  <Sims />
-                </div>
-                {/* <div>
+    <div className='flex flex-col min-h-screen'>
+      <Navbar scrollToSims={scrollToSims} />
+      <Routes>
+        <Route
+          path='/'
+          element={
+            <>
+              <div className='relative h-screen'>
+                <Hero scrollToSims={scrollToSims} />
+              </div>
+              <div ref={simsRef}>
+                <Sims />
+              </div>
+              {/* <div>
                   <Scratch />
                 </div> */}
-                <div>
-                  <Testimonials />
-                </div>
-              </>
-            }
-          />
-          <Route path='/about' element={<About />} />
-          {/* <Route path='/learn' element={<Learn />} /> */}
-          <Route path='/read' element={<Read />} />
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
+              <div>
+                <Testimonials />
+              </div>
+            </>
+          }
+        />
+        <Route path='/about' element={<About />} />
+        {/* <Route path='/learn' element={<Learn />} /> */}
+        <Route path='/read' element={<Read />} />
+      </Routes>
+      {location.pathname !== "/read" && <Footer />}
+    </div>
   );
 }
 
