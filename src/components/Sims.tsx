@@ -1,8 +1,11 @@
+import { useNavigate } from "react-router-dom";
+
 import Sim from "./Sim";
 import "./Sims.css";
 import DrawButton from "./DrawButton";
 
 const Sims = () => {
+  const navigate = useNavigate();
   return (
     <section className='sims-container' aria-label='Simulations'>
       <h1 className='sims-heading'>
@@ -68,6 +71,9 @@ const Sims = () => {
           </p>
         }
       />
+      <button onClick={() => navigate("/read")} className='read-button'>
+        Go to Read Simulation
+      </button>
     </section>
   );
 };

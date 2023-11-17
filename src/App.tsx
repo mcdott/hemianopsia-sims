@@ -5,6 +5,8 @@ import "./App.css";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Sims from "./components/Sims";
+import Read from "./components/Read";
+// import Scratch from "./components/Scratch";
 import Footer from "./components/Footer";
 import About from "./components/About";
 // import Learn from "./components/Learn";
@@ -35,13 +37,17 @@ function App() {
                   <Sims />
                 </div>
                 {/* <div>
-                  <Testimonials />
+                  <Scratch />
                 </div> */}
+                <div>
+                  <Testimonials />
+                </div>
               </>
             }
           />
           <Route path='/about' element={<About />} />
           {/* <Route path='/learn' element={<Learn />} /> */}
+          <Route path='/read' element={<Read />} />
         </Routes>
         <Footer />
       </div>

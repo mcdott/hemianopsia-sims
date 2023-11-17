@@ -36,3 +36,26 @@
 .sims-description {
   margin-bottom: var(--spacing-4);
 }
+
+/* .read-button {
+  position: relative;
+  padding-left: var(--spacing-8);
+  padding-right: var(--spacing-8);
+  padding-top: var(--spacing-4);
+  padding-bottom: var(--spacing-4);
+  color: #fff;
+  border: none;
+  background: linear-gradient(
+    90deg,
+    #0884ff,
+    #9400ff,
+    #fbbf24,
+    #058b00,
+    #0884ff
+  );
+  background-size: 400%;
+  border-radius: 30px;
+  transition: background-color var(--transition-duration-normal);
+  overflow: hidden;
+  z-index: 1;
+} */

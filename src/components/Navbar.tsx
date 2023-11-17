@@ -65,6 +65,11 @@ const Navbar: React.FC<NavbarProps> = ({ scrollToSims }) => {
                 Simulations
               </button>
             </li>
+            <li>
+              {/* <Link to='/read' className='link-hover transition-duration'>
+                Read
+              </Link> */}
+            </li>
             <li className='nav-link md-border-none max-w-xs'>
               <Link to='/about' className='link-hover transition-duration'>
                 About
