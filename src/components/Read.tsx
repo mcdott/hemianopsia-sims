@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Read.css";
 import customCursorImg from "../assets/purple-dash-96px.png";
+// https://icons8.com/icons/set/dash to change dash color
 
 const Read = () => {
   const [cursorX, setCursorX] = useState(0);
@@ -37,9 +38,7 @@ const Read = () => {
   };
 
   useEffect(() => {
-    const container = document.querySelector(
-      ".reading-window-cursor-container"
-    );
+    const container = document.querySelector(".read-sim-container");
 
     if (container) {
       container.addEventListener("mouseenter", handleContainerMouseEnter);
@@ -52,16 +51,20 @@ const Read = () => {
     }
   }, []);
 
-  const overlayStyle = overlayOnLeft
+  const overlayStyle: React.CSSProperties = overlayOnLeft
     ? {
-        width: `min(${cursorX}px)`,
+        position: "absolute", // Position the overlay relative to the container
+        width: `min(${cursorX}px, 100%)`, // Limit the width to the parent's width
         left: 0,
-        right: "auto",
+        top: 0, // Ensure it covers from the top of the container
+        bottom: 0, // Stretch to the bottom of the container
       }
     : {
-        width: `calc(100vw - ${cursorX}px)`,
+        position: "absolute",
+        width: `calc(100% - ${cursorX}px)`,
         left: `${cursorX}px`,
-        right: "auto",
+        top: 0,
+        bottom: 0,
       };
 
   const toggleOverlaySide = () => {
@@ -96,74 +99,11 @@ const Read = () => {
           </p>
         </div>
       </div>
-      <div className='reading-window-cursor-container'>
-        <div className='read-container' onMouseMove={handleMouseMove}>
-          <div className='overlay' style={overlayStyle}></div>
-          <h1 id='read-title'>Read</h1>
-          <p>
-            Keep your eyes on the prize — the mouse pointer, that is! Glide it
-            under each word and let it lead you to the next line; that's how
-            this simulation works. Toggle to see how sentences unfold
-            differently with right and with left hemianopsia. Keep your eyes on
-            the prize — the mouse pointer, that is! Glide it under each word and
-            let it lead you to the next line; that's how this simulation works.
-            Toggle to see how sentences unfold differently with right and with
-            left hemianopsia.
-          </p>
-          <p>
-            Keep your eyes on the prize — the mouse pointer, that is! Glide it
-            under each word and let it lead you to the next line; that's how
-            this simulation works. Toggle to see how sentences unfold
-            differently with right and with left hemianopsia. Keep your eyes on
-            the prize — the mouse pointer, that is! Glide it under each word and
-            let it lead you to the next line; that's how this simulation works.
-            Toggle to see how sentences unfold differently with right and with
-            left hemianopsia.
-          </p>
-          <p>
-            Keep your eyes on the prize — the mouse pointer, that is! Glide it
-            under each word and let it lead you to the next line; that's how
-            this simulation works. Toggle to see how sentences unfold
-            differently with right and with left hemianopsia. Keep your eyes on
-            the prize — the mouse pointer, that is! Glide it under each word and
-            let it lead you to the next line; that's how this simulation works.
-            Toggle to see how sentences unfold differently with right and with
-            left hemianopsia.
-          </p>
-          <p>
-            Keep your eyes on the prize — the mouse pointer, that is! Glide it
-            under each word and let it lead you to the next line; that's how
-            this simulation works. Toggle to see how sentences unfold
-            differently with right and with left hemianopsia. Keep your eyes on
-            the prize — the mouse pointer, that is! Glide it under each word and
-            let it lead you to the next line; that's how this simulation works.
-            Toggle to see how sentences unfold differently with right and with
-            left hemianopsia.
-          </p>
-          <p>
-            Keep your eyes on the prize — the mouse pointer, that is! Glide it
-            under each word and let it lead you to the next line; that's how
-            this simulation works. Toggle to see how sentences unfold
-            differently with right and with left hemianopsia. Keep your eyes on
-            the prize — the mouse pointer, that is! Glide it under each word and
-            let it lead you to the next line; that's how this simulation works.
-            Toggle to see how sentences unfold differently with right and with
-            left hemianopsia.
-          </p>
-          <p>
-            Keep your eyes on the prize — the mouse pointer, that is! Glide it
-            under each word and let it lead you to the next line; that's how
-            this simulation works. Toggle to see how sentences unfold
-            differently with right and with left hemianopsia. Keep your eyes on
-            the prize — the mouse pointer, that is! Glide it under each word and
-            let it lead you to the next line; that's how this simulation works.
-            Toggle to see how sentences unfold differently with right and with
-            left hemianopsia.
-          </p>
-          <div className='custom-cursor' style={customCursorStyle}></div>
-        </div>
-      </div>
-      {/* <div className='sidebar'>
+
+      <div className='read-sim-container' onMouseMove={handleMouseMove}>
+        <div className='overlay' style={overlayStyle}></div>
+        <div className='custom-cursor' style={customCursorStyle}></div>
+        <h1 id='read-title'>Read</h1>
         <p>
           Keep your eyes on the prize — the mouse pointer, that is! Glide it
           under each word and let it lead you to the next line; that's how this
@@ -173,7 +113,52 @@ const Read = () => {
           to the next line; that's how this simulation works. Toggle to see how
           sentences unfold differently with right and with left hemianopsia.
         </p>
-      </div> */}
+        <p>
+          Keep your eyes on the prize — the mouse pointer, that is! Glide it
+          under each word and let it lead you to the next line; that's how this
+          simulation works. Toggle to see how sentences unfold differently with
+          right and with left hemianopsia. Keep your eyes on the prize — the
+          mouse pointer, that is! Glide it under each word and let it lead you
+          to the next line; that's how this simulation works. Toggle to see how
+          sentences unfold differently with right and with left hemianopsia.
+        </p>
+        <p>
+          Keep your eyes on the prize — the mouse pointer, that is! Glide it
+          under each word and let it lead you to the next line; that's how this
+          simulation works. Toggle to see how sentences unfold differently with
+          right and with left hemianopsia. Keep your eyes on the prize — the
+          mouse pointer, that is! Glide it under each word and let it lead you
+          to the next line; that's how this simulation works. Toggle to see how
+          sentences unfold differently with right and with left hemianopsia.
+        </p>
+        <p>
+          Keep your eyes on the prize — the mouse pointer, that is! Glide it
+          under each word and let it lead you to the next line; that's how this
+          simulation works. Toggle to see how sentences unfold differently with
+          right and with left hemianopsia. Keep your eyes on the prize — the
+          mouse pointer, that is! Glide it under each word and let it lead you
+          to the next line; that's how this simulation works. Toggle to see how
+          sentences unfold differently with right and with left hemianopsia.
+        </p>
+        <p>
+          Keep your eyes on the prize — the mouse pointer, that is! Glide it
+          under each word and let it lead you to the next line; that's how this
+          simulation works. Toggle to see how sentences unfold differently with
+          right and with left hemianopsia. Keep your eyes on the prize — the
+          mouse pointer, that is! Glide it under each word and let it lead you
+          to the next line; that's how this simulation works. Toggle to see how
+          sentences unfold differently with right and with left hemianopsia.
+        </p>
+        <p>
+          Keep your eyes on the prize — the mouse pointer, that is! Glide it
+          under each word and let it lead you to the next line; that's how this
+          simulation works. Toggle to see how sentences unfold differently with
+          right and with left hemianopsia. Keep your eyes on the prize — the
+          mouse pointer, that is! Glide it under each word and let it lead you
+          to the next line; that's how this simulation works. Toggle to see how
+          sentences unfold differently with right and with left hemianopsia.
+        </p>
+      </div>
     </>
   );
 };
