@@ -21,7 +21,7 @@ const Navbar: React.FC<NavbarProps> = ({ scrollToSims }) => {
     <nav className='nav-container'>
       <div className='nav-content'>
         <h1 className='nav-title'>
-          Heminanopsia <span className='title-accented'>Sims</span>
+          Hemianopsia <span className='title-accented'>Sims</span>
         </h1>
         <button
           aria-label='Toggle navigation'
