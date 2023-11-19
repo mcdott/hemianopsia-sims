@@ -14,7 +14,7 @@
   --color-quaternary-low-saturation: hsl(180, 49%, 75%);
   --color-black: #1c1c1c;
   --color-dark-grey: #333333;
-  --color-text-subdued: #909090;
+  --color-dark-grey-with-opacity: rgba(51, 51, 51, 0.5);
   --color-text-white: #f4f4f4;
   --color-bg-primary: white;
   --color-bg-secondary: #f2f2f2;
