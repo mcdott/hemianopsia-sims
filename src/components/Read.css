@@ -1,44 +1,15 @@
 /* Read.css */
-.read-sim-container {
-  /* height: 100%; */
-  position: relative;
-  padding: 0 5% 0 5%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.grid-a {
-  display: grid;
-  grid-gap: var(--spacing-2);
-  grid-template-columns: repeat(2, 1fr);
-  /* grid-template-rows: auto; */
-  grid-template-areas:
-    "p1 p2"
-    "p1 p2"
-    "p1 p2"
-    "p1 p2"
-    "p3 p3";
-}
-
-.grid-b {
-  display: grid;
-  grid-gap: var(--spacing-2);
-  grid-template-columns: repeat(3, 1fr);
-  /* grid-template-rows: auto; */
-  grid-template-areas:
-    "p4 p4 p6"
-    "p5 p5 p6"
-    "p8 p7 p7"
-    "p9 p9 p9";
-}
-
 /* Toggle container styles */
 .toggle-container {
   position: relative;
   height: auto;
-  padding: var(--spacing-6);
-  background-color: var(--color-quaternary-low-saturation);
+  padding-top: var(--spacing-16);
+  padding-bottom: var(--spacing-8);
+  background: radial-gradient(
+    circle,
+    rgba(84, 196, 196, 0.5572882649216238) 85%,
+    rgba(251, 191, 36, 0.49341734985009633) 100%
+  );
   cursor: auto;
   display: flex;
   flex-direction: column;
@@ -124,10 +95,44 @@ label:active:after {
   text-decoration: none;
 }
 
+/* Read container styles */
+.read-sim-container {
+  /* height: 100%; */
+  position: relative;
+  padding: 0 5% 0 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid-a {
+  display: grid;
+  grid-gap: var(--spacing-2);
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-rows: auto; */
+  grid-template-areas:
+    "p1 p2"
+    "p1 p2"
+    "p1 p2"
+    "p1 p2"
+    "p3 p3";
+}
+
+.grid-b {
+  display: grid;
+  grid-gap: var(--spacing-2);
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: auto; */
+  grid-template-areas:
+    "p4 p4 p6"
+    "p5 p5 p6"
+    "p8 p7 p7"
+    "p9 p9 p9";
+}
+
 /* Text styles */
 
 #read-title {
-  /* font-family: var(--font-family-serif); */
   font-size: var(--font-size-xxl);
   line-height: var(--line-height-large);
   margin: var(--spacing-0);
@@ -137,7 +142,7 @@ label:active:after {
 
 #toggle-description {
   font-family: var(--font-family-serif);
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-xxl);
   line-height: var(--line-height-large);
   margin: var(--spacing-0);
   padding: var(--spacing-0);

@@ -20,8 +20,9 @@ const Navbar: React.FC<NavbarProps> = ({ scrollToSims }) => {
   return (
     <nav className='nav-container'>
       <div className='nav-content'>
-        <h1 className='nav-title'>
-          Hemianopsia <span className='title-accented'>Sims</span>
+        <h1 className={isHomePage ? "nav-title" : "hidden"}>
+          Hemianopsia{" "}
+          <span className={isHomePage ? "title-accented" : "hidden"}>Sims</span>
         </h1>
         <button
           aria-label='Toggle navigation'
@@ -52,7 +53,7 @@ const Navbar: React.FC<NavbarProps> = ({ scrollToSims }) => {
         {!isHomePage ? (
           <li className='nav-link'>
             <Link to='/' className='link-hover transition-duration'>
-              Home
+              🔙
             </Link>
           </li>
         ) : (

@@ -10,6 +10,7 @@
   /* --color-tertiary-hover: #2651b8; */
   --color-purple: #9400ff;
   --color-green: #058b00;
+  /* --color-quaternary: rgb(84, 196, 196); */
   --color-quaternary: hsl(180, 49%, 55%);
   --color-quaternary-low-saturation: hsl(180, 49%, 75%);
   --color-black: #1c1c1c;

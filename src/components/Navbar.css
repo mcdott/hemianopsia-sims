@@ -24,6 +24,12 @@
   font-weight: var(--font-weight-extrabold);
 }
 
+.hidden {
+  /* color: var(--color-purple); */
+  /* font-weight: var(--font-weight-extrabold); */
+  display: none;
+}
+
 .nav-content {
   display: flex;
   align-items: center;

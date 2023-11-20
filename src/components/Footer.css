@@ -4,7 +4,8 @@
   background-color: var(--color-black);
   padding: var(--spacing-4);
   color: var(--color-text-white);
-  font-weight: var(--font-weight-bold);
+  /* font-weight: var(--font-weight-bold); */
+  font-size: var(--font-size-small);
   text-align: center;
   margin-top: auto;
 }

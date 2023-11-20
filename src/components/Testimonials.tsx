@@ -26,9 +26,7 @@ const Testimonials: React.FC = () => {
       <figure className='testimonial'>
         <figcaption>
           <blockquote>
-            <p>
-              Yet another space for someone to, hopefully, say something nice.
-            </p>
+            <p>Yet another space. Pls say something nice 🙂</p>
           </blockquote>
           <h3>Solana Durek</h3>
           <h4>Parent of child with hemianopsia</h4>

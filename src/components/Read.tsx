@@ -117,6 +117,37 @@ const Read = () => {
         <div className='overlay' style={overlayStyle}></div>
         <div className='custom-cursor' style={customCursorStyle}></div>
         <h1 id='read-title'>Read</h1>
+        <p>
+          Keep your eyes on the prize — the mouse pointer, that is! Glide it
+          under each word and let it lead you to the next line; that's how this
+          simulation works. Toggle to see how sentences unfold differently with
+          right and with left hemianopsia. Keep your eyes on the prize — the
+          mouse pointer, that is! Glide it under each word and let it lead you
+          to the next line; that's how this simulation works. Toggle to see how
+          sentences unfold differently with right and with left hemianopsia.
+          Keep your eyes on the prize — the mouse pointer, that is! Glide it
+          under each word and let it lead you to the next line; that's how this
+          simulation works. Toggle to see how sentences unfold differently with
+          right and with left hemianopsia.
+        </p>
+        <p>
+          Keep your eyes on the prize — the mouse pointer, that is! Glide it
+          under each word and let it lead you to the next line; that's how this
+          simulation works. Toggle to see how sentences unfold differently with
+          right and with left hemianopsia. Keep your eyes on the prize — the
+          mouse pointer, that is! Glide it under each word and let it lead you
+          to the next line; that's how this simulation works. Toggle to see how
+          sentences unfold differently with right and with left hemianopsia.
+          Keep your eyes on the prize — the mouse pointer, that is! Glide it
+          under each word and let it lead you to the next line; that's how this
+          simulation works. Toggle to see how sentences unfold differently with
+          right and with left hemianopsia. Toggle to see how sentences unfold
+          differently with right and with left hemianopsia. Keep your eyes on
+          the prize — the mouse pointer, that is! Glide it under each word and
+          let it lead you to the next line; that's how this simulation works.
+          Toggle to see how sentences unfold differently with right and with
+          left hemianopsia.
+        </p>
         <section className='grid-a'>
           <p id='p1'>
             Keep your eyes on the prize — the mouse pointer, that is! Glide it
