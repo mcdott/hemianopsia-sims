@@ -6,6 +6,10 @@ import DrawButton from "./DrawButton";
 
 const Sims = () => {
   const navigate = useNavigate();
+  const goToReadPage = () => {
+    navigate("/read", { state: { scrollToTop: true } });
+  };
+
   return (
     <section className='sims-container' aria-label='Simulations'>
       <h1 className='sims-heading'>
@@ -71,7 +75,7 @@ const Sims = () => {
           </p>
         }
       />
-      <button onClick={() => navigate("/read")} className='read-button'>
+      <button onClick={goToReadPage} className='read-button'>
         Go to Read Simulation
       </button>
     </section>

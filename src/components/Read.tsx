@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Read.css";
 import customCursorImg from "../assets/purple-dash-96px.png";
+import { useLocation } from "react-router-dom";
 // https://icons8.com/icons/set/dash to change dash color
 
 const Read = () => {
@@ -11,11 +12,21 @@ const Read = () => {
   const [isCursorOverContainer, setIsCursorOverContainer] = useState(false);
   const [customCursorPos, setCustomCursorPos] = useState({ x: 0, y: 0 });
 
+  // Scroll to top on page load
+  const location = useLocation();
+  useEffect(() => {
+    if (location.state?.scrollToTop) {
+      window.scrollTo(0, 0);
+    }
+  }, [location]);
+
+  // Handle mouse movement to update cursor position to position the overlay
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     setCursorX(e.clientX);
     setCustomCursorPos({ x: e.clientX, y: e.clientY });
   };
 
+  // Toggle custom cursor/default cursor when enterring and leaving the container
   const handleContainerMouseEnter = () => {
     setIsCursorOverContainer(true);
   };
