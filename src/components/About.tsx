@@ -21,7 +21,7 @@ const About: React.FC = () => {
         <p className='about-paragraph'>
           The mission of this website is to extend the impact of these tools
           beyond a single classroom by sharing them with the world. If you see
-          their value, please join in by spreading the word! Together, we can
+          value in them, please join in by spreading the word! Together, we can
           increase understanding of hemianopsia, one simulation at a time.
         </p>
       </section>
