@@ -18,7 +18,7 @@ const Sims = () => {
         <br />
         Dive in and see for yourself how a simulation is worth a thousand words.
       </p>
-      <MediaCard
+      {/* <MediaCard
         imageUrl='src/assets/hero1-small-480px.jpg'
         imageDescription='a city street scene'
         title='Draw'
@@ -26,8 +26,8 @@ const Sims = () => {
         description='Unleash your creativity, but with a twist. See how memory and perception come into play when drawing with hemianopsia.'
         actionText='Try it'
         actionUrl='/draw'
-        // flipImage={true}
-      />
+        flipImage={true}
+      /> */}
       <Sim
         position='left'
         simId='sim1'
@@ -58,8 +58,7 @@ const Sims = () => {
             Challenge yourself to adapt and react when part of the screen is
             unseen, and discover how hemianopsia can change the way you play.
             <br />
-            <br />
-            (Coming soon!)
+            <br />( Coming soon! )
           </p>
         }
       />
