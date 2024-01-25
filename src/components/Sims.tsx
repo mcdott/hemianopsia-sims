@@ -1,6 +1,7 @@
 import Sim from "./Sim";
 import "./Sims.css";
 import DrawButton from "./DrawButton";
+import MediaCard from "./MediaCard";
 
 const Sims = () => {
   return (
@@ -17,6 +18,16 @@ const Sims = () => {
         <br />
         Dive in and see for yourself how a simulation is worth a thousand words.
       </p>
+      <MediaCard
+        imageUrl='src/assets/hero1-small-480px.jpg'
+        imageDescription='a city street scene'
+        title='Draw'
+        subtitle='a picture'
+        description='Unleash your creativity, but with a twist. See how memory and perception come into play when drawing with hemianopsia.'
+        actionText='Try it'
+        actionUrl='/draw'
+        // flipImage={true}
+      />
       <Sim
         position='left'
         simId='sim1'
