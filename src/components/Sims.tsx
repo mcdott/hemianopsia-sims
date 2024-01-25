@@ -58,7 +58,7 @@ const Sims = () => {
             Challenge yourself to adapt and react when part of the screen is
             unseen, and discover how hemianopsia can change the way you play.
             <br />
-            <br />( Coming soon! )
+            <br /> -- Coming soon!
           </p>
         }
       />
