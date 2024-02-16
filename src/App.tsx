@@ -8,7 +8,9 @@ import Sims from "./components/Sims";
 import Footer from "./components/Footer";
 import About from "./components/About";
 // import Learn from "./components/Learn";
-import Testimonials from "./components/Testimonials";
+// import Testimonials from "./components/Testimonials";
+import DrawSim from "./components/DrawSim";
+import ReadSim from "./components/ReadSim";
 
 function App() {
   const simsRef = useRef<HTMLDivElement>(null);
@@ -40,8 +42,9 @@ function App() {
               </>
             }
           />
+          <Route path='/read' element={<ReadSim />} />
+          <Route path='/draw' element={<DrawSim />} />
           <Route path='/about' element={<About />} />
-          {/* <Route path='/learn' element={<Learn />} /> */}
         </Routes>
         <Footer />
       </div>

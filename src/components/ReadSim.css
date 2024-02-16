@@ -1,0 +1,199 @@
+/* Read.css */
+/* Toggle container styles */
+.toggle-container {
+  position: relative;
+  height: auto;
+  padding-top: var(--spacing-16);
+  padding-bottom: var(--spacing-8);
+  background: radial-gradient(
+    circle,
+    rgba(84, 196, 196, 0.5572882649216238) 85%,
+    rgba(251, 191, 36, 0.49341734985009633) 100%
+  );
+  cursor: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+.toggle-labels-container {
+  margin: var(--spacing-0);
+  padding: var(--spacing-2);
+  cursor: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Toggle functionality comes from a hidden checkbox input */
+input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: var(--spacing-16);
+  height: var(--spacing-8);
+  background: linear-gradient(
+    to right,
+    var(--color-bg-primary) 50%,
+    var(--color-dark-grey-with-opacity) 50%
+  );
+  display: block;
+  border-radius: var(--spacing-10);
+  position: relative;
+}
+
+label:after {
+  content: "";
+  position: absolute;
+  top: var(--spacing-0-5);
+  left: var(--spacing-0-5);
+  width: var(--spacing-7);
+  height: var(--spacing-7);
+  background: var(--color-purple);
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+input:checked + label {
+  background: linear-gradient(
+    to right,
+    var(--color-dark-grey-with-opacity) 50%,
+    var(--color-bg-primary) 50%
+  );
+}
+
+input:checked + label:after {
+  left: calc(100% - var(--spacing-0-5));
+  transform: translateX(-100%);
+}
+
+label:active:after {
+  width: var(--spacing-10);
+}
+
+/* Toggle label styles */
+.text-active {
+  color: var(--color-purple);
+  font-weight: var(--font-weight-bold);
+  text-decoration: underline solid var(--color-purple);
+}
+
+.text-inactive {
+  /* font-weight: var(--font-weight-bold); */
+  opacity: 0.6;
+}
+
+.toggle-labels-container .text-active,
+.toggle-labels-container .text-inactive {
+  margin: var(--spacing-8) var(--spacing-4) var(--spacing-2) var(--spacing-4);
+  text-decoration: none;
+}
+
+/* Read container styles */
+.read-sim-container {
+  /* height: 100%; */
+  position: relative;
+  padding: 0 5% 0 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid-a {
+  display: grid;
+  grid-gap: var(--spacing-2);
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-rows: auto; */
+  grid-template-areas:
+    "p1 p2"
+    "p1 p2"
+    "p1 p2"
+    "p1 p2"
+    "p3 p3";
+}
+
+.grid-b {
+  display: grid;
+  grid-gap: var(--spacing-2);
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: auto; */
+  grid-template-areas:
+    "p4 p4 p6"
+    "p5 p5 p6"
+    "p8 p7 p7"
+    "p9 p9 p9";
+}
+
+/* Text styles */
+
+#read-title {
+  font-size: var(--font-size-xxl);
+  line-height: var(--line-height-large);
+  margin: var(--spacing-0);
+  padding: var(--spacing-10) 0 0 0;
+  grid-area: title;
+}
+
+#toggle-description {
+  font-family: var(--font-family-serif);
+  font-size: var(--font-size-xxl);
+  line-height: var(--line-height-large);
+  margin: var(--spacing-0);
+  padding: var(--spacing-0);
+}
+
+p {
+  padding: var(--spacing-4);
+}
+
+#p1 {
+  grid-area: p1;
+  font-size: var(--font-size-small);
+  padding: var(--spacing-8);
+  margin: var(--spacing-8) var(--spacing-16) var(--spacing-8) var(--spacing-8);
+  background-color: var(--color-bg-secondary);
+  border-radius: var(--border-radius);
+}
+#p2 {
+  grid-area: p2;
+  margin: var(--spacing-8);
+}
+#p3 {
+  grid-area: p3;
+}
+#p4 {
+  grid-area: p4;
+}
+#p5 {
+  grid-area: p5;
+}
+#p6 {
+  grid-area: p6;
+  font-size: var(--font-size-small);
+  padding: var(--spacing-8);
+  margin-right: var(--spacing-24);
+  background-color: var(--color-quaternary-low-saturation);
+  border-radius: var(--border-radius);
+}
+#p7 {
+  grid-area: p7;
+}
+#p8 {
+  grid-area: p8;
+  font-size: var(--font-size-small);
+  padding: var(--spacing-8);
+  margin-right: var(--spacing-24);
+  background-color: var(--color-quaternary-low-saturation);
+  border-radius: var(--border-radius);
+}
+#p9 {
+  grid-area: p9;
+  margin: var(--spacing-4) var(--spacing-8) var(--spacing-24) var(--spacing-8);
+  padding: var(--spacing-8) var(--spacing-24) var(--spacing-8) var(--spacing-24);
+}
